@@ -23,4 +23,10 @@
         <Setter Property="FontSize" Value="20"/>
     </Style>
 
+    <Style TargetType="RadioButton" x:Key="DarkRadioButton">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+
 </ResourceDictionary>

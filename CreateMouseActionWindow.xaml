@@ -23,6 +23,11 @@
             <Button Content="Set location" Style="{StaticResource DarkButton}" Foreground="#00b894" Name="Button_SetLocation"/>
             <Button Content="Test location" Style="{StaticResource DarkButton}" Foreground="#f0932b" Margin="20,0,0,0" Name="Button_TestLocation"/>
         </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+            <RadioButton Content="Left click" Style="{StaticResource DarkRadioButton}" Name="RadioButton_Leftclick" Margin="0,0,10,0"/>
+            <RadioButton Content="Right click" Style="{StaticResource DarkRadioButton}" Name="RadioButton_Rightclick" Margin="10,0,10,0"/>
+        </StackPanel>
         
 
     </Grid>
