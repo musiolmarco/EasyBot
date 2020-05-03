@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace EasyBot.Classes
 {
-    public class MouseAction : BotAction
+    public class BotAction
     {
-
-        public int x, y;
-        public bool left_click;
         public int delay;
-
     }
 }
