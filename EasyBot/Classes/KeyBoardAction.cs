@@ -8,5 +8,9 @@ namespace EasyBot.Classes
 {
     class KeyBoardAction
     {
+
+        public string text;
+        public int delay;
+
     }
 }
