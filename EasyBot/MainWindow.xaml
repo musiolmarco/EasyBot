@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyBot"
+        xmlns:fa="clr-namespace:FontAwesome.WPF;assembly=FontAwesome.WPF"
         mc:Ignorable="d"
         Title="EasyBot" Height="450" Width="800" Background="#151515">
 
@@ -33,10 +34,9 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
-                
             </Grid.ColumnDefinitions>
             <Button Content="Start" Grid.Column="0" Style="{StaticResource BottomButton}" Typography.Capitals="AllSmallCaps"/>
-            <Button Content="+" Grid.Column="1" Style="{StaticResource BottomButton}"/>
+            <Button Content="+" Grid.Column="1" Style="{StaticResource BottomButton}"></Button>
         </Grid>
         
     </Grid>
