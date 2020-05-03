@@ -26,17 +26,23 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
+        <StackPanel>
         <ListBox Grid.Row="0" Background="#151515">
             
         </ListBox>
+        </StackPanel>
 
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Button Content="Start" Grid.Column="0" Style="{StaticResource BottomButton}" Typography.Capitals="AllSmallCaps"/>
             <Button Content="+" Grid.Column="1" Style="{StaticResource BottomButton}"></Button>
+            <Button Grid.Column="2" Style="{StaticResource BottomButton}">
+                <fa:ImageAwesome Icon="Cog" Foreground="White" Height="30"/>
+            </Button>
         </Grid>
         
     </Grid>

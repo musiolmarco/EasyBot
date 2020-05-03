@@ -12,3 +12,7 @@ C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot.Properties.Res
 C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot.csproj.GenerateResource.cache
 C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot.exe
 C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot.pdb
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\bin\Debug\FontAwesome.WPF.dll
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\bin\Debug\FontAwesome.WPF.xml
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\App.baml
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot.csproj.CopyComplete
