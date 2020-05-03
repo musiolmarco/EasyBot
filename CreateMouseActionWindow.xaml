@@ -14,7 +14,15 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Label Content="X: " Style="{StaticResource DarkLabel}"/>
+            <Label Content="" Name="Label_X_Value"/>
+            <Label Content="Y: " Style="{StaticResource DarkLabel}"/>
+            <Label Content="" Name="Label_Y_Value" Style="{StaticResource DarkLabel}"/>
+            
+            <Button Content="Set location" Style="{StaticResource DarkButton}" Foreground="#00b894" Name="Button_SetLocation"/>
+            <Button Content="Test location" Style="{StaticResource DarkButton}" Foreground="#f0932b" Margin="20,0,0,0" Name="Button_TestLocation"/>
+        </StackPanel>
         
 
     </Grid>
