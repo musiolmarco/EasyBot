@@ -33,8 +33,9 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
+                
             </Grid.ColumnDefinitions>
-            <Button Content="Start" Grid.Column="0" Style="{StaticResource BottomButton}"/>
+            <Button Content="Start" Grid.Column="0" Style="{StaticResource BottomButton}" Typography.Capitals="AllSmallCaps"/>
             <Button Content="+" Grid.Column="1" Style="{StaticResource BottomButton}"/>
         </Grid>
         
