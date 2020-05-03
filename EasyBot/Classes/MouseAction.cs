@@ -11,7 +11,6 @@ namespace EasyBot.Classes
 
         public int x, y;
         public bool left_click;
-        public int delay;
 
     }
 }
