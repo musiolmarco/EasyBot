@@ -8,6 +8,6 @@ namespace EasyBot.Classes
 {
     public class BotAction
     {
-        public int delay;
+        public int delay { get; set; }
     }
 }

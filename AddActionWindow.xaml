@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyBot"
         mc:Ignorable="d"
-        Title="Add Action" Height="100" Width="400" Background="#151515">
-    
-    
+        Title="Add Action" Height="100" Width="400" Background="#151515" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <ResourceDictionary Source="ResourceDictionaries/DarkAppereance.xaml"/>
+    </Window.Resources>
     
     <Grid>
         <Grid.ColumnDefinitions>
@@ -15,8 +17,8 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Button Grid.Column="0" Content="MouseAction" Style="{StaticResource DarkButton}"/>
-        <Button Grid.Column="1" Content="KeyBoardAction" Style="{StaticResource DarkButton}"/>
+        <Button Grid.Column="0" Content="MouseAction" Style="{StaticResource DarkButton}" Name="Button_AddMouseAction" Click="Button_AddMouseAction_Click"/>
+        <Button Grid.Column="1" Content="KeyBoardAction" Style="{StaticResource DarkButton}" Name="Button_AddKeyBoardAction"/>
 
     </Grid>
 </Window>

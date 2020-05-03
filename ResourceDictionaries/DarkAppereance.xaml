@@ -12,9 +12,15 @@
         <Setter Property="BorderThickness" Value="0"/>
     </Style>
 
-    <Style TargetType="fa:ImageAwesome" x:Key="ButtonAwesome">
+    <Style TargetType="fa:ImageAwesome" x:Key="DarkButtonAwesome">
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="Height" Value="30"/>
+    </Style>
+
+    <Style TargetType="Label" x:Key="DarkLabel">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontSize" Value="20"/>
     </Style>
 
 </ResourceDictionary>

@@ -15,25 +15,13 @@ using System.Windows.Shapes;
 namespace EasyBot
 {
     /// <summary>
-    /// Interaktionslogik für AddActionWindow.xaml
+    /// Interaktionslogik für CreateMouseAction.xaml
     /// </summary>
-    public partial class AddActionWindow : Window
+    public partial class CreateMouseActionWindow : Window
     {
-        public AddActionWindow()
+        public CreateMouseActionWindow()
         {
             InitializeComponent();
-
-            
-        }
-
-        private void Button_AddMouseAction_Click(object sender, RoutedEventArgs e)
-        {
-
-            CreateMouseActionWindow createMouseActionWindow = new CreateMouseActionWindow();
-            createMouseActionWindow.Show();
-            this.Close();
-
-
         }
     }
 }

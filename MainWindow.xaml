@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:EasyBot"
         xmlns:fa="clr-namespace:FontAwesome.WPF;assembly=FontAwesome.WPF"
         mc:Ignorable="d"
-        Title="EasyBot" Height="450" Width="800" Background="#151515">
+        Title="EasyBot" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen">
 
 
     <Grid>
@@ -35,11 +35,11 @@
                 </Grid.RowDefinitions>
 
                 <Button Style="{StaticResource DarkButton}" Grid.Row="0" Name="Button_UP">
-                    <fa:ImageAwesome Icon="ArrowUp" Style="{StaticResource ButtonAwesome}"/>
+                    <fa:ImageAwesome Icon="ArrowUp" Style="{StaticResource DarkButtonAwesome}"/>
                 </Button>
 
                 <Button Style="{StaticResource DarkButton}" Grid.Row="1" Name="Button_DOWN">
-                    <fa:ImageAwesome Icon="ArrowDown" Style="{StaticResource ButtonAwesome}"/>
+                    <fa:ImageAwesome Icon="ArrowDown" Style="{StaticResource DarkButtonAwesome}"/>
                 </Button>
 
             </Grid>
@@ -52,10 +52,10 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Content="Start" Grid.Column="0" Style="{StaticResource DarkButton}" Typography.Capitals="AllSmallCaps" Name="Button_Start"/>
-            <Button Content="+" Grid.Column="1" Style="{StaticResource DarkButton}" Name="Button_Add" Click="Button_Add_Click"/>
+            <Button Content="Start" Grid.Column="1" Style="{StaticResource DarkButton}" Typography.Capitals="AllSmallCaps" Name="Button_Start"/>
+            <Button Content="+" Grid.Column="0" Style="{StaticResource DarkButton}" Name="Button_Add" Click="Button_Add_Click"/>
             <Button Grid.Column="2" Style="{StaticResource DarkButton}" Name="Button_Settings">
-                <fa:ImageAwesome Icon="Cog" Style="{StaticResource ButtonAwesome}"/>
+                <fa:ImageAwesome Icon="Cog" Style="{StaticResource DarkButtonAwesome}"/>
             </Button>
         </Grid>
         

@@ -9,7 +9,7 @@ namespace EasyBot.Classes
     public class KeyBoardAction : BotAction
     {
 
-        public string text;
+        public string text { get; set; }
 
     }
 }
