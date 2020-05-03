@@ -1,0 +1,14 @@
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\bin\Debug\EasyBot.exe.config
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\bin\Debug\EasyBot.exe
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\bin\Debug\EasyBot.pdb
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot.csprojAssemblyReference.cache
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\MainWindow.g.cs
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\App.g.cs
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot_MarkupCompile.cache
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot_MarkupCompile.lref
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\MainWindow.baml
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot.g.resources
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot.Properties.Resources.resources
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot.csproj.GenerateResource.cache
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot.exe
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot.pdb
