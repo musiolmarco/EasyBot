@@ -16,3 +16,6 @@ C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\bin\Debug\FontAwesome.WPF.dll
 C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\bin\Debug\FontAwesome.WPF.xml
 C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\App.baml
 C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\EasyBot.csproj.CopyComplete
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\AddActionWindow.g.cs
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\AddActionWindow.baml
+C:\Users\Marco\Documents\GitHub\EasyBot\EasyBot\obj\Debug\ResourceDictionaries\DarkAppereance.baml

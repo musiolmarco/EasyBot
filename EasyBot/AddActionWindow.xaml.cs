@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace EasyBot
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für AddActionWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AddActionWindow : Window
     {
-        public MainWindow()
+        public AddActionWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Add_Click(object sender, RoutedEventArgs e)
-        {
-            AddActionWindow addActionWindow = new AddActionWindow();
-            addActionWindow.Show();
         }
     }
 }

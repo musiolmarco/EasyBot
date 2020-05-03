@@ -8,22 +8,6 @@
         mc:Ignorable="d"
         Title="EasyBot" Height="450" Width="800" Background="#151515">
 
-    <Window.Resources>
-        <Style TargetType="Button" x:Key="DarkButton">
-            <Setter Property="Background" Value="#151515"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="FontFamily" Value="Arial"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="BorderThickness" Value="0"/>
-        </Style>
-
-        <Style TargetType="fa:ImageAwesome" x:Key="ButtonAwesome">
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Height" Value="30"/>
-        </Style>
-    </Window.Resources>
-    
 
     <Grid>
         <Grid.RowDefinitions>
@@ -50,11 +34,11 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-                <Button Style="{StaticResource DarkButton}" Grid.Row="0">
+                <Button Style="{StaticResource DarkButton}" Grid.Row="0" Name="Button_UP">
                     <fa:ImageAwesome Icon="ArrowUp" Style="{StaticResource ButtonAwesome}"/>
                 </Button>
 
-                <Button Style="{StaticResource DarkButton}" Grid.Row="1">
+                <Button Style="{StaticResource DarkButton}" Grid.Row="1" Name="Button_DOWN">
                     <fa:ImageAwesome Icon="ArrowDown" Style="{StaticResource ButtonAwesome}"/>
                 </Button>
 
@@ -68,9 +52,9 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Content="Start" Grid.Column="0" Style="{StaticResource DarkButton}" Typography.Capitals="AllSmallCaps"/>
-            <Button Content="+" Grid.Column="1" Style="{StaticResource DarkButton}"></Button>
-            <Button Grid.Column="2" Style="{StaticResource DarkButton}">
+            <Button Content="Start" Grid.Column="0" Style="{StaticResource DarkButton}" Typography.Capitals="AllSmallCaps" Name="Button_Start"/>
+            <Button Content="+" Grid.Column="1" Style="{StaticResource DarkButton}" Name="Button_Add" Click="Button_Add_Click"/>
+            <Button Grid.Column="2" Style="{StaticResource DarkButton}" Name="Button_Settings">
                 <fa:ImageAwesome Icon="Cog" Style="{StaticResource ButtonAwesome}"/>
             </Button>
         </Grid>

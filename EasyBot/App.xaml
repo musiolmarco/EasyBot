@@ -4,6 +4,17 @@
              xmlns:local="clr-namespace:EasyBot"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <FontFamily x:Key="FontAwesome">/Fonts/fontawesome-webfont.ttf#FontAwesome</FontFamily>
+
+
+        <ResourceDictionary>
+            <FontFamily x:Key="FontAwesome">/Fonts/fontawesome-webfont.ttf#FontAwesome</FontFamily>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ResourceDictionaries/DarkAppereance.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+        
+        
+
     </Application.Resources>
 </Application>
