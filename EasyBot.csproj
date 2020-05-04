@@ -77,9 +77,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classes\BotAction.cs" />
-    <Compile Include="Classes\KeyBoardAction.cs" />
-    <Compile Include="Classes\MouseAction.cs" />
+    <Compile Include="Models\BotAction.cs" />
+    <Compile Include="Models\KeyBoardAction.cs" />
+    <Compile Include="Models\MouseAction.cs" />
     <Compile Include="CreateMouseActionWindow.xaml.cs">
       <DependentUpon>CreateMouseActionWindow.xaml</DependentUpon>
     </Compile>
