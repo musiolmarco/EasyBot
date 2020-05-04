@@ -23,5 +23,10 @@ namespace EasyBot
         {
             InitializeComponent();
         }
+
+        private void Button_Create_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

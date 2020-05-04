@@ -11,7 +11,7 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
@@ -28,7 +28,16 @@
             <RadioButton Content="Left click" Style="{StaticResource DarkRadioButton}" Name="RadioButton_Leftclick" Margin="0,0,10,0"/>
             <RadioButton Content="Right click" Style="{StaticResource DarkRadioButton}" Name="RadioButton_Rightclick" Margin="10,0,10,0"/>
         </StackPanel>
-        
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
+            <TextBox Width="150" Background="White" BorderThickness="0" Height="30" FontSize="20" TextAlignment="Center" Name="TextBox_Delay"/>
+            <Label Content="Delay (in milliseconds)" Style="{StaticResource DarkLabel}"/>
+        </StackPanel>
+
+
+            <Button Grid.Row="3" Content="Create" Style="{StaticResource DarkButton}" Foreground="#2ecc71" Name="Button_Create" Click="Button_Create_Click"/>
+     
+
 
     </Grid>
 </Window>
