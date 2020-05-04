@@ -31,5 +31,11 @@ namespace EasyBot.Views
             createMouseActionWindow.Show();
 
         }
+
+        private void Button_AddKeyBoardAction_Click(object sender, RoutedEventArgs e)
+        {
+            CreateKeyboardActionWindow createKeyboardActionWindow = new CreateKeyboardActionWindow();
+            createKeyboardActionWindow.Show();
+        }
     }
 }

@@ -18,7 +18,7 @@
         </Grid.ColumnDefinitions>
 
         <Button Grid.Column="0" Content="MouseAction" Style="{StaticResource DarkButton}" Name="Button_AddMouseAction" Click="Button_AddMouseAction_Click"/>
-        <Button Grid.Column="1" Content="KeyBoardAction" Style="{StaticResource DarkButton}" Name="Button_AddKeyBoardAction"/>
+        <Button Grid.Column="1" Content="KeyBoardAction" Style="{StaticResource DarkButton}" Name="Button_AddKeyBoardAction" Click="Button_AddKeyBoardAction_Click"/>
 
     </Grid>
 </Window>
