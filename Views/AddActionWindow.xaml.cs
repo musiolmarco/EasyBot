@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace EasyBot
+namespace EasyBot.Views
 {
     /// <summary>
     /// Interaktionslogik für AddActionWindow.xaml
@@ -22,8 +22,6 @@ namespace EasyBot
         public AddActionWindow()
         {
             InitializeComponent();
-
-            
         }
 
         private void Button_AddMouseAction_Click(object sender, RoutedEventArgs e)
@@ -31,8 +29,6 @@ namespace EasyBot
 
             CreateMouseActionWindow createMouseActionWindow = new CreateMouseActionWindow();
             createMouseActionWindow.Show();
-            this.Close();
-
 
         }
     }

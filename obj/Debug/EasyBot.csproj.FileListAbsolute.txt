@@ -25,14 +25,10 @@ C:\Users\Marco\Documents\GitHub\EasyBot\bin\Debug\EasyBot.pdb
 C:\Users\Marco\Documents\GitHub\EasyBot\bin\Debug\FontAwesome.WPF.dll
 C:\Users\Marco\Documents\GitHub\EasyBot\bin\Debug\FontAwesome.WPF.xml
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\EasyBot.csprojAssemblyReference.cache
-C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\AddActionWindow.g.cs
-C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\MainWindow.g.cs
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\App.g.cs
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\EasyBot_MarkupCompile.cache
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\EasyBot_MarkupCompile.lref
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\App.baml
-C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\AddActionWindow.baml
-C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\MainWindow.baml
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\ResourceDictionaries\DarkAppereance.baml
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\EasyBot.g.resources
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\EasyBot.Properties.Resources.resources
@@ -40,5 +36,9 @@ C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\EasyBot.csproj.GenerateResourc
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\EasyBot.csproj.CopyComplete
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\EasyBot.exe
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\EasyBot.pdb
-C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\CreateMouseActionWindow.g.cs
-C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\CreateMouseActionWindow.baml
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\AddActionWindow.g.cs
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\CreateMouseActionWindow.g.cs
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\AddActionWindow.baml
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\CreateMouseActionWindow.baml
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\MainWindow.baml

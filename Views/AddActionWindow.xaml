@@ -1,16 +1,16 @@
-﻿<Window x:Class="EasyBot.AddActionWindow"
+﻿<Window x:Class="EasyBot.Views.AddActionWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:EasyBot"
+        xmlns:local="clr-namespace:EasyBot.Views"
         mc:Ignorable="d"
         Title="Add Action" Height="100" Width="400" Background="#151515" WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
-        <ResourceDictionary Source="ResourceDictionaries/DarkAppereance.xaml"/>
+        <ResourceDictionary Source="../ResourceDictionaries/DarkAppereance.xaml"/>
     </Window.Resources>
-    
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>

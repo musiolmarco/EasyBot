@@ -1,11 +1,12 @@
-﻿<Window x:Class="EasyBot.CreateMouseActionWindow"
+﻿<Window x:Class="EasyBot.Views.CreateMouseActionWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:EasyBot"
+        xmlns:local="clr-namespace:EasyBot.Views"
         mc:Ignorable="d"
         Title="Create Mouseaction" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen">
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -19,7 +20,7 @@
             <Label Content="" Name="Label_X_Value"/>
             <Label Content="Y: " Style="{StaticResource DarkLabel}"/>
             <Label Content="" Name="Label_Y_Value" Style="{StaticResource DarkLabel}"/>
-            
+
             <Button Content="Set location" Style="{StaticResource DarkButton}" Foreground="#00b894" Name="Button_SetLocation"/>
             <Button Content="Test location" Style="{StaticResource DarkButton}" Foreground="#f0932b" Margin="20,0,0,0" Name="Button_TestLocation"/>
         </StackPanel>
@@ -35,8 +36,8 @@
         </StackPanel>
 
 
-            <Button Grid.Row="3" Content="Create" Style="{StaticResource DarkButton}" Foreground="#2ecc71" Name="Button_Create" Click="Button_Create_Click"/>
-     
+        <Button Grid.Row="3" Content="Create" Style="{StaticResource DarkButton}" Foreground="#2ecc71" Name="Button_Create" Click="Button_Create_Click"/>
+
 
 
     </Grid>
