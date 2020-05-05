@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="Create Keyboardaction" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="Text" Style="{StaticResource DarkLabel}"/>
+            <TextBox Style="{StaticResource }"/>
+        </StackPanel>
+
     </Grid>
 </Window>

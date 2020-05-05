@@ -29,4 +29,12 @@
         <Setter Property="FontWeight" Value="Bold"/>
     </Style>
 
+    <Style TargetType="TextBox" x:Key="DarkTextBox">
+    <Setter Property="Width" Value="150"/>
+        <Setter Property="BorderBrush" Value="0"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="TextAlignment" Value="Center"/>
+    </Style>
+
 </ResourceDictionary>

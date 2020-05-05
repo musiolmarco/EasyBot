@@ -31,7 +31,7 @@
         </StackPanel>
 
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
-            <TextBox Width="150" Background="White" BorderThickness="0" Height="30" FontSize="20" TextAlignment="Center" Name="TextBox_Delay"/>
+            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay"/>
             <Label Content="Delay (in milliseconds)" Style="{StaticResource DarkLabel}"/>
         </StackPanel>
 
