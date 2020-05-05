@@ -29,6 +29,7 @@ namespace EasyBot.Views
 
             CreateMouseActionWindow createMouseActionWindow = new CreateMouseActionWindow();
             createMouseActionWindow.Show();
+            this.Close();
 
         }
 
@@ -36,6 +37,7 @@ namespace EasyBot.Views
         {
             CreateKeyboardActionWindow createKeyboardActionWindow = new CreateKeyboardActionWindow();
             createKeyboardActionWindow.Show();
+            this.Close();
         }
     }
 }

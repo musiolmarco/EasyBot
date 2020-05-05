@@ -11,5 +11,11 @@ namespace EasyBot.Classes
 
         public string text { get; set; }
 
+        public KeyBoardAction(string text, int delay)
+        {
+            this.text = text;
+            this.delay = delay;
+        }
+
     }
 }
