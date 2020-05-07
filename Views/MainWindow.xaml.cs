@@ -25,7 +25,7 @@ namespace EasyBot.Views
 
         private MouseBotAction TestMouseBotAction = new MouseBotAction(500, 200, true, 200);
 
-        public static List<BotAction> Actions = new List<BotAction>();
+        private static List<BotAction> Actions = new List<BotAction>();
 
         public static ListBox listBox;
 
@@ -47,9 +47,21 @@ namespace EasyBot.Views
             addActionWindow.Show();
         }
 
+        public static void AddAction(BotAction botAction)
+        {
+            Actions.Add(botAction);
+
+            Console.WriteLine("Added");
+
+            Console.WriteLine(Actions.Count);
+        }
+
         public static void RefreshListBox()
         {
-            listBox.UpdateLayout();
+
+            listBox.Items.Refresh();
+
+            Console.WriteLine("Updated");
         }
     }
 }

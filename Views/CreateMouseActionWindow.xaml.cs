@@ -62,9 +62,11 @@ namespace EasyBot.Views
 
             MouseBotAction mouseBotAction = new MouseBotAction(X, Y, Left_Click, Delay);
 
-            MainWindow.Actions.Add(mouseBotAction);
+            MainWindow.AddAction(mouseBotAction);
 
             MainWindow.RefreshListBox();
+
+            this.Close();
 
         }
 
