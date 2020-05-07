@@ -63,6 +63,8 @@ namespace EasyBot.Views
 
             MainWindow.Actions.Add(mouseBotAction);
 
+            MainWindow.RefreshListBox();
+
         }
 
         private void Button_SetLocation_Click(object sender, RoutedEventArgs e)

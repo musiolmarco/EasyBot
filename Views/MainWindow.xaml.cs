@@ -27,11 +27,15 @@ namespace EasyBot.Views
 
         public static List<BotAction> Actions = new List<BotAction>();
 
+        public static ListBox listBox;
+
         public MainWindow()
         {
             InitializeComponent();
 
-            ListBox_Actions.ItemsSource = Actions;
+            listBox = ListBox_Actions;
+
+            listBox.ItemsSource = Actions;
 
             Actions.Add(TestMouseBotAction);
 
@@ -41,6 +45,11 @@ namespace EasyBot.Views
         {
             AddActionWindow addActionWindow = new AddActionWindow();
             addActionWindow.Show();
+        }
+
+        public static void RefreshListBox()
+        {
+            listBox.UpdateLayout();
         }
     }
 }

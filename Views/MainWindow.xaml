@@ -33,7 +33,7 @@
                             <Label Content="{Binding Name}" Style="{StaticResource DarkLabel}" Foreground="{Binding DisplayColor}" Padding="0"/>
 
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Label Content="Delay:" Style="{StaticResource DarkLabel}" FontSize="15" Padding="0"/>
+                                <Label Content="Delay: " Style="{StaticResource DarkLabel}" FontSize="15" Padding="0"/>
                                 <Label Content="{Binding Delay}" Style="{StaticResource DarkLabel}" FontSize="15" Padding="0"/>
                             </StackPanel>
                             
