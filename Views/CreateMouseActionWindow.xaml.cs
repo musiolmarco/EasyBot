@@ -44,7 +44,7 @@ namespace EasyBot.Views
 
         private void Button_Create_Click(object sender, RoutedEventArgs e)
         {
-
+            MouseAction mouseAction = new MouseAction();
         }
 
         private void Button_SetLocation_Click(object sender, RoutedEventArgs e)

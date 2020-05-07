@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace EasyBot.Classes
 {
-    public class KeyBoardAction : BotAction
+    public class KeyBoardBotAction : BotAction
     {
 
         public string text { get; set; }
 
-        public KeyBoardAction(string text, int delay)
+        public KeyBoardBotAction(string text, int delay)
         {
             this.text = text;
             this.delay = delay;
