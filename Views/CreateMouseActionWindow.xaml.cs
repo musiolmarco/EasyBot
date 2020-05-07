@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using wf = System.Windows.Forms;
 using System.Drawing;
 using System.Runtime.InteropServices;
+using EasyBot.Classes;
 
 namespace EasyBot.Views
 {
@@ -44,7 +45,24 @@ namespace EasyBot.Views
 
         private void Button_Create_Click(object sender, RoutedEventArgs e)
         {
-            MouseAction mouseAction = new MouseAction();
+            int X = Convert.ToInt32(Label_X_Value.Content);
+            int Y = Convert.ToInt32(Label_Y_Value.Content);
+            int Delay = Convert.ToInt32(TextBox_Delay.Text);
+            bool Left_Click;
+
+            if ((bool)RadioButton_Leftclick.IsChecked)
+            {
+                Left_Click = true;
+            }
+            else
+            {
+                Left_Click = false;
+            }
+
+            MouseBotAction mouseBotAction = new MouseBotAction(X, Y, Left_Click, Delay);
+
+            Console.WriteLine(X + " " + Y + " " + Delay + " " + Left_Click);
+
         }
 
         private void Button_SetLocation_Click(object sender, RoutedEventArgs e)

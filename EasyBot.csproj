@@ -77,8 +77,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\BotAction.cs" />
-    <Compile Include="Models\KeyBoardAction.cs" />
-    <Compile Include="Models\MouseAction.cs" />
+    <Compile Include="Models\KeyBoardBotAction.cs" />
+    <Compile Include="Models\MouseBotAction.cs" />
     <Page Include="ResourceDictionaries\DarkAppereance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
