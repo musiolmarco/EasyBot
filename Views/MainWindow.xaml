@@ -23,19 +23,24 @@
             </Grid.ColumnDefinitions>
 
 
-            <ListBox Background="#151515" Grid.Column="0" Name="ListBox_Actions" >
 
+
+            <ListBox HorizontalContentAlignment="Center" x:Name="ListBox_Actions" Background="#151515">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel>
-                            <Label Content="{Binding Name}" Style="{StaticResource DarkLabel}" Foreground="{Binding DisplayColor}"/>
-                            <Label Content="{Binding Delay}" Style="{StaticResource DarkLabel}" FontSize="15"/>
+
+                        <StackPanel HorizontalAlignment="Center">
+                            <Label Content="{Binding Name}" Style="{StaticResource DarkLabel}" Foreground="{Binding DisplayColor}" Padding="0"/>
+
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Label Content="Delay:" Style="{StaticResource DarkLabel}" FontSize="15" Padding="0"/>
+                                <Label Content="{Binding Delay}" Style="{StaticResource DarkLabel}" FontSize="15" Padding="0"/>
+                            </StackPanel>
+                            
                         </StackPanel>
                         
                     </DataTemplate>
-                    
                 </ListBox.ItemTemplate>
-
             </ListBox>
 
             <Grid Grid.Column="1">
