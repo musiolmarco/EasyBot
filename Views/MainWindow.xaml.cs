@@ -23,7 +23,7 @@ namespace EasyBot.Views
     public partial class MainWindow : Window
     {
 
-        private MouseBotAction TestMouseBotAction = new MouseBotAction(500, 200, true, 200, "Leftclick");
+        private MouseBotAction TestMouseBotAction = new MouseBotAction(500, 200, true, 200);
 
         public static List<BotAction> Actions = new List<BotAction>();
 

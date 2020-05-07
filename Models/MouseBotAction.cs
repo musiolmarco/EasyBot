@@ -12,7 +12,7 @@ namespace EasyBot.Classes
         public int X, Y;
         public bool Left_Click { get; set; }
 
-        public MouseBotAction(int X, int Y, bool Left_Click, int Delay, string Name)
+        public MouseBotAction(int X, int Y, bool Left_Click, int Delay)
         {
             this.X = X;
             this.Y = Y;
@@ -23,10 +23,12 @@ namespace EasyBot.Classes
             if (Left_Click)
             {
                 DisplayColor = "#74b9ff";
+                Name = "Leftclick";
             }
             else
             {
                 DisplayColor = "#e84393";
+                Name = "Rightclick";
             }
         }
 
