@@ -27,8 +27,13 @@
 
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Label Content="{Binding Name}" Style="{StaticResource DarkLabel}" Foreground="{Binding DisplayColor}"/>
+                        <StackPanel>
+                            <Label Content="{Binding Name}" Style="{StaticResource DarkLabel}" Foreground="{Binding DisplayColor}"/>
+                            <Label Content="{Binding Delay}" Style="{StaticResource DarkLabel}" FontSize="15"/>
+                        </StackPanel>
+                        
                     </DataTemplate>
+                    
                 </ListBox.ItemTemplate>
 
             </ListBox>

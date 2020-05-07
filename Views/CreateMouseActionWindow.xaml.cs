@@ -59,7 +59,7 @@ namespace EasyBot.Views
                 Left_Click = false;
             }
 
-            MouseBotAction mouseBotAction = new MouseBotAction(X, Y, Left_Click, Delay, "TestName");
+            MouseBotAction mouseBotAction = new MouseBotAction(X, Y, Left_Click, Delay);
 
             MainWindow.Actions.Add(mouseBotAction);
 
