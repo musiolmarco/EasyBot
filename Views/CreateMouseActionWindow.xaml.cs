@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using wf = System.Windows.Forms;
+using System.Drawing;
 
 namespace EasyBot.Views
 {
@@ -20,6 +21,10 @@ namespace EasyBot.Views
     /// </summary>
     public partial class CreateMouseActionWindow : Window
     {
+
+        bool SetMouseLocation = false;
+        
+
         public CreateMouseActionWindow()
         {
             InitializeComponent();
@@ -35,7 +40,24 @@ namespace EasyBot.Views
 
         private void Button_SetLocation_Click(object sender, RoutedEventArgs e)
         {
+            SetMouseLocation = true;
+            Label_SetLocationInfo.Visibility = Visibility.Visible;
+        }
 
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.F8 && SetMouseLocation)
+            {
+
+                System.Drawing.Point MousePositionPoint = wf.Control.MousePosition;
+
+                Label_X_Value.Content = MousePositionPoint.X.ToString();
+                Label_Y_Value.Content = MousePositionPoint.Y.ToString();
+
+                Label_SetLocationInfo.Visibility = Visibility.Collapsed;
+
+                SetMouseLocation = false;
+            }
         }
     }
 }
