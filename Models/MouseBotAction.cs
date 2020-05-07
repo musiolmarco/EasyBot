@@ -9,15 +9,16 @@ namespace EasyBot.Classes
     public class MouseBotAction : BotAction
     {
 
-        public int x, y;
-        public bool left_click { get; set; }
+        public int X, Y;
+        public bool Left_Click { get; set; }
 
-        public MouseBotAction(int x, int y, bool left_click, int delay)
+        public MouseBotAction(int X, int Y, bool Left_Click, int Delay, string Name)
         {
-            this.x = x;
-            this.y = y;
-            this.left_click = left_click;
-            this.delay = delay;
+            this.X = X;
+            this.Y = Y;
+            this.Left_Click = Left_Click;
+            this.Delay = Delay;
+            this.Name = Name;
         }
 
     }

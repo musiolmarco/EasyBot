@@ -9,12 +9,13 @@ namespace EasyBot.Classes
     public class KeyBoardBotAction : BotAction
     {
 
-        public string text { get; set; }
+        public string Text { get; set; }
 
-        public KeyBoardBotAction(string text, int delay)
+        public KeyBoardBotAction(string Text, int Delay)
         {
-            this.text = text;
-            this.delay = delay;
+            this.Text = Text;
+            this.Delay = Delay;
+            this.Name = Name;
         }
 
     }
