@@ -15,6 +15,7 @@ using wf = System.Windows.Forms;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using EasyBot.Classes;
+using System.Text.RegularExpressions;
 
 namespace EasyBot.Views
 {
@@ -100,6 +101,12 @@ namespace EasyBot.Views
 
             SetPosition(X, Y);
 
+        }
+
+        private void TextBox_Delay_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
     }
 }
