@@ -61,7 +61,7 @@ namespace EasyBot.Views
 
             MouseBotAction mouseBotAction = new MouseBotAction(X, Y, Left_Click, Delay);
 
-            Console.WriteLine(X + " " + Y + " " + Delay + " " + Left_Click);
+            MainWindow.Actions.Add(mouseBotAction);
 
         }
 
