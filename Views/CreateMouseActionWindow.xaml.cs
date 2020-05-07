@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using wf = System.Windows.Forms;
 
 namespace EasyBot.Views
 {
@@ -22,9 +23,17 @@ namespace EasyBot.Views
         public CreateMouseActionWindow()
         {
             InitializeComponent();
+
+            Label_X_Value.Content = 0;
+            Label_Y_Value.Content = 0;
         }
 
         private void Button_Create_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_SetLocation_Click(object sender, RoutedEventArgs e)
         {
 
         }
