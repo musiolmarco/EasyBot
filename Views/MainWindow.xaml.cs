@@ -47,13 +47,9 @@ namespace EasyBot.Views
             addActionWindow.Show();
         }
 
-        public static void AddAction(BotAction botAction)
+        public static void AddBotAction(BotAction botAction)
         {
             Actions.Add(botAction);
-
-            Console.WriteLine("Added");
-
-            Console.WriteLine(Actions.Count);
         }
 
         public static void RefreshListBox()
@@ -61,7 +57,6 @@ namespace EasyBot.Views
 
             listBox.Items.Refresh();
 
-            Console.WriteLine("Updated");
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EasyBot.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,20 @@ namespace EasyBot.Views
         {
             Regex regex = new Regex("[^0-9]+");
             e.Handled = regex.IsMatch(e.Text);
+        }
+
+        private void Button_Create_Click(object sender, RoutedEventArgs e)
+        {
+            string Text = TextBox_Text.Text;
+            int Delay = Convert.ToInt32(TextBox_Delay.Text);
+
+            KeyBoardBotAction keyBoardBotAction = new KeyBoardBotAction(Text, Delay);
+
+            MainWindow.AddBotAction(keyBoardBotAction);
+
+            MainWindow.RefreshListBox();
+
+            this.Close();
         }
     }
 }

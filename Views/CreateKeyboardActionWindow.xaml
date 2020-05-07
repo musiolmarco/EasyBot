@@ -16,7 +16,7 @@
 
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="Text" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center"/>
-            <TextBox Style="{StaticResource DarkTextBox}"/>
+            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Text"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -24,7 +24,7 @@
             <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" PreviewTextInput="TextBox_Delay_PreviewTextInput" Text="0"/>
         </StackPanel>
 
-        <Button Grid.Row="2" Style="{StaticResource DarkButton}" Content="Create" Foreground="#2ecc71"/>
+        <Button Grid.Row="2" Style="{StaticResource DarkButton}" Content="Create" Foreground="#2ecc71" Name="Button_Create" Click="Button_Create_Click"/>
 
 
     </Grid>

@@ -15,7 +15,8 @@ namespace EasyBot.Classes
         {
             this.Text = Text;
             this.Delay = Delay;
-            this.Name = Name;
+            this.Name = "Text: \"" + Text + "\"";
+            this.DisplayColor = "#1dd1a1";
         }
 
     }
