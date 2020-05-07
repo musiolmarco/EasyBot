@@ -48,8 +48,17 @@ namespace EasyBot.Views
         {
             int X = Convert.ToInt32(Label_X_Value.Content);
             int Y = Convert.ToInt32(Label_Y_Value.Content);
-            int Delay = Convert.ToInt32(TextBox_Delay.Text);
+            int Delay;
             bool Left_Click;
+
+            if (TextBox_Delay.Text != "")
+            {
+                Delay = Convert.ToInt32(TextBox_Delay.Text);
+            }
+            else
+            {
+                Delay = 0;
+            }
 
             if ((bool)RadioButton_Leftclick.IsChecked)
             {

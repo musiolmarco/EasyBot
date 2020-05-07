@@ -35,7 +35,16 @@ namespace EasyBot.Views
         private void Button_Create_Click(object sender, RoutedEventArgs e)
         {
             string Text = TextBox_Text.Text;
-            int Delay = Convert.ToInt32(TextBox_Delay.Text);
+
+            int Delay;
+
+            if(TextBox_Delay.Text != "") {
+                Delay = Convert.ToInt32(TextBox_Delay.Text);
+            }
+            else
+            {
+                Delay = 0;
+            }
 
             KeyBoardBotAction keyBoardBotAction = new KeyBoardBotAction(Text, Delay);
 
