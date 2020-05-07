@@ -11,5 +11,7 @@ namespace EasyBot.Classes
         public int Delay { get; set; }
 
         public string Name { get; set; }
+
+        public string DisplayColor { get; set; }
     }
 }

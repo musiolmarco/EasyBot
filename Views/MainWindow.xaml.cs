@@ -30,6 +30,11 @@ namespace EasyBot.Views
         public MainWindow()
         {
             InitializeComponent();
+
+            ListBox_Actions.ItemsSource = Actions;
+
+            Actions.Add(TestMouseBotAction);
+
         }
 
         private void Button_Add_Click(object sender, RoutedEventArgs e)

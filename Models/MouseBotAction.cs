@@ -19,6 +19,15 @@ namespace EasyBot.Classes
             this.Left_Click = Left_Click;
             this.Delay = Delay;
             this.Name = Name;
+
+            if (Left_Click)
+            {
+                DisplayColor = "#74b9ff";
+            }
+            else
+            {
+                DisplayColor = "#e84393";
+            }
         }
 
     }

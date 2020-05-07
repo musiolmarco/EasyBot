@@ -23,7 +23,13 @@
             </Grid.ColumnDefinitions>
 
 
-            <ListBox Background="#151515" Grid.Column="0" >
+            <ListBox Background="#151515" Grid.Column="0" Name="ListBox_Actions" >
+
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Label Content="{Binding Name}" Style="{StaticResource DarkLabel}" Foreground="{Binding DisplayColor}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
 
             </ListBox>
 
