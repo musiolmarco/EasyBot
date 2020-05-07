@@ -1,4 +1,5 @@
-﻿using EasyBot.Views;
+﻿using EasyBot.Classes;
+using EasyBot.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,9 @@ namespace EasyBot.Views
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public static List<BotAction> Actions = new List<BotAction>();
+
         public MainWindow()
         {
             InitializeComponent();

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\
+D:\Github\EasyBot\obj\Debug\
 EasyBot
 none
 false
 DEBUG;TRACE
-C:\Users\Marco\Documents\GitHub\EasyBot\App.xaml
+D:\Github\EasyBot\App.xaml
 5166551406
 
-11-1340689177
-161979399254
+12-2028207541
+1640351598
 ResourceDictionaries\DarkAppereance.xaml;Views\AddActionWindow.xaml;Views\CreateKeyboardActionWindow.xaml;Views\CreateMouseActionWindow.xaml;Views\MainWindow.xaml;
 
-False
+True
 
