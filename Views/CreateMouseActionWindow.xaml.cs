@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using wf = System.Windows.Forms;
 using System.Drawing;
+using System.Runtime.InteropServices;
 
 namespace EasyBot.Views
 {
@@ -33,6 +34,14 @@ namespace EasyBot.Views
             Label_Y_Value.Content = 0;
         }
 
+        private void SetPosition(int x, int y)
+        {
+            SetCursorPos(x, y);
+        }
+
+        [DllImport("User32.dll")]
+        private static extern bool SetCursorPos(int X, int Y);
+
         private void Button_Create_Click(object sender, RoutedEventArgs e)
         {
 
@@ -42,6 +51,8 @@ namespace EasyBot.Views
         {
             SetMouseLocation = true;
             Label_SetLocationInfo.Visibility = Visibility.Visible;
+
+            
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
@@ -58,6 +69,17 @@ namespace EasyBot.Views
 
                 SetMouseLocation = false;
             }
+        }
+
+
+        private void Button_TestLocation_Click(object sender, RoutedEventArgs e)
+        {
+
+            int X = Convert.ToInt32(Label_X_Value.Content);
+            int Y = Convert.ToInt32(Label_Y_Value.Content);
+
+            SetPosition(X, Y);
+
         }
     }
 }

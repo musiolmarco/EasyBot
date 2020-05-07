@@ -23,7 +23,7 @@
             <Label Content="" Name="Label_Y_Value" Style="{StaticResource DarkLabel}"/>
 
             <Button Content="Set location" Style="{StaticResource DarkButton}" Foreground="#00b894" Name="Button_SetLocation" Margin="10,0,0,0" Click="Button_SetLocation_Click"/>
-            <Button Content="Test location" Style="{StaticResource DarkButton}" Foreground="#f0932b" Margin="20,0,0,0" Name="Button_TestLocation"/>
+            <Button Content="Test location" Style="{StaticResource DarkButton}" Foreground="#f0932b" Margin="20,0,0,0" Name="Button_TestLocation" Click="Button_TestLocation_Click"/>
         </StackPanel>
 
             <Label Content="Press F8 to set location" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center" FontSize="15" Visibility="Collapsed" x:Name="Label_SetLocationInfo"/>
