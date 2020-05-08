@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EasyBot.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,7 @@ namespace EasyBot.Views
     /// </summary>
     public partial class MouseBotActionSettings : Window
     {
-        public MouseBotActionSettings()
+        public MouseBotActionSettings(MouseBotAction mouseBotAction)
         {
             InitializeComponent();
         }

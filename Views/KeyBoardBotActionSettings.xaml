@@ -21,7 +21,7 @@
 
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="Delay" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center"/>
-            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" PreviewTextInput="TextBox_Delay_PreviewTextInput" Text="0"/>
+            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" Text="0"/>
         </StackPanel>
 
 

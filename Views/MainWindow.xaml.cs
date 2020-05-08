@@ -111,11 +111,18 @@ namespace EasyBot.Views
 
                 if(ListBox_Actions.SelectedItem is MouseBotAction)
                 {
-                    //Open MouseBotAction settings
+
+                    MouseBotActionSettings mouseBotActionSettings = new MouseBotActionSettings((MouseBotAction)ListBox_Actions.SelectedItem);
+
+                    mouseBotActionSettings.Show();
+
                 }
                 else if (ListBox_Actions.SelectedItem is KeyBoardBotAction)
                 {
-                    //Open KeyBoardBotAction settings
+                    KeyBoardBotActionSettings keyBoardBotActionSettings = new KeyBoardBotActionSettings((KeyBoardBotAction)ListBox_Actions.SelectedItem);
+
+                    keyBoardBotActionSettings.Show();
+
                 }
 
             }

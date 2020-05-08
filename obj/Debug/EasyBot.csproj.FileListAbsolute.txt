@@ -69,3 +69,7 @@ D:\Github\EasyBot\obj\Debug\EasyBot.csproj.GenerateResource.cache
 D:\Github\EasyBot\obj\Debug\EasyBot.csproj.CopyComplete
 D:\Github\EasyBot\obj\Debug\EasyBot.exe
 D:\Github\EasyBot\obj\Debug\EasyBot.pdb
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\KeyBoardBotActionSettings.g.cs
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\MouseBotActionSettings.g.cs
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\KeyBoardBotActionSettings.baml
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\MouseBotActionSettings.baml
