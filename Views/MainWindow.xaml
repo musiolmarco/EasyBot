@@ -36,7 +36,7 @@
                                 <Label Content="Delay: " Style="{StaticResource DarkLabel}" FontSize="15" Padding="0"/>
                                 <Label Content="{Binding Delay}" Style="{StaticResource DarkLabel}" FontSize="15" Padding="0"/>
                             </StackPanel>
-                            
+
                         </StackPanel>
                         
                     </DataTemplate>
@@ -50,7 +50,7 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-                <Button Style="{StaticResource DarkButton}" Grid.Row="0" Name="Button_UP">
+                <Button Style="{StaticResource DarkButton}" Grid.Row="0" Name="Button_UP" Click="Button_UP_Click">
                     <fa:ImageAwesome Icon="ArrowUp" Style="{StaticResource DarkButtonAwesome}"/>
                 </Button>
 

@@ -25,6 +25,10 @@ namespace EasyBot.Views
 
         private MouseBotAction TestMouseBotAction = new MouseBotAction(500, 200, true, 200);
 
+        private MouseBotAction TestMouseBotAction2 = new MouseBotAction(500, 200, false, 200);
+
+        private MouseBotAction TestMouseBotAction3 = new MouseBotAction(500, 312, false, 3122);
+
         private static List<BotAction> Actions = new List<BotAction>();
 
         public static ListBox listBox;
@@ -38,6 +42,10 @@ namespace EasyBot.Views
             listBox.ItemsSource = Actions;
 
             Actions.Add(TestMouseBotAction);
+
+            Actions.Add(TestMouseBotAction2);
+
+            Actions.Add(TestMouseBotAction3);
 
         }
 
@@ -57,6 +65,25 @@ namespace EasyBot.Views
 
             listBox.Items.Refresh();
 
+        }
+
+        private void Button_UP_Click(object sender, RoutedEventArgs e)
+        {
+
+            if(ListBox_Actions.SelectedIndex != -1 && ListBox_Actions.SelectedIndex != 0) { 
+
+            int NewIndex = ListBox_Actions.SelectedIndex - 1;
+
+            BotAction botAction = (BotAction) ListBox_Actions.SelectedItem;
+
+            Actions.Remove(botAction);
+
+            Actions.Insert(NewIndex, botAction);
+
+
+            RefreshListBox();
+
+            }
         }
     }
 }
