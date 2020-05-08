@@ -109,6 +109,15 @@ namespace EasyBot.Views
             if(ListBox_Actions.SelectedIndex != -1)
             {
 
+                if(ListBox_Actions.SelectedItem is MouseBotAction)
+                {
+                    //Open MouseBotAction settings
+                }
+                else if (ListBox_Actions.SelectedItem is KeyBoardBotAction)
+                {
+                    //Open KeyBoardBotAction settings
+                }
+
             }
         }
     }
