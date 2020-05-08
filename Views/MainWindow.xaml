@@ -54,7 +54,7 @@
                     <fa:ImageAwesome Icon="ArrowUp" Style="{StaticResource DarkButtonAwesome}"/>
                 </Button>
 
-                <Button Style="{StaticResource DarkButton}" Grid.Row="1" Name="Button_DOWN">
+                <Button Style="{StaticResource DarkButton}" Grid.Row="1" Name="Button_DOWN" Click="Button_DOWN_Click">
                     <fa:ImageAwesome Icon="ArrowDown" Style="{StaticResource DarkButtonAwesome}"/>
                 </Button>
 

@@ -85,5 +85,23 @@ namespace EasyBot.Views
 
             }
         }
+
+        private void Button_DOWN_Click(object sender, RoutedEventArgs e)
+        {
+            if(ListBox_Actions.SelectedIndex != -1 && ListBox_Actions.SelectedIndex != Actions.Count - 1)
+            {
+
+                int NewIndex = ListBox_Actions.SelectedIndex + 1;
+
+                BotAction botAction = (BotAction)ListBox_Actions.SelectedItem;
+
+                Actions.Remove(botAction);
+
+                Actions.Insert(NewIndex, botAction);
+
+                RefreshListBox();
+
+            }
+        }
     }
 }
