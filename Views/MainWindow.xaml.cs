@@ -103,5 +103,13 @@ namespace EasyBot.Views
 
             }
         }
+
+        private void Button_Settings_Click(object sender, RoutedEventArgs e)
+        {
+            if(ListBox_Actions.SelectedIndex != -1)
+            {
+
+            }
+        }
     }
 }
