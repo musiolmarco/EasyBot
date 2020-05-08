@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EasyBot.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,14 @@ namespace EasyBot.Views
     /// </summary>
     public partial class KeyBoardBotActionSettings : Window
     {
-        public KeyBoardBotActionSettings()
+        public KeyBoardBotActionSettings(KeyBoardBotAction keyBoardBotAction)
         {
             InitializeComponent();
+
+            TextBox_Text.Text = keyBoardBotAction.Text;
+
+            TextBox_Delay.Text = keyBoardBotAction.Delay.ToString();
+
         }
     }
 }
