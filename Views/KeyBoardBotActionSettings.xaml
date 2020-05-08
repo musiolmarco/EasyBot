@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyBot.Views"
         mc:Ignorable="d"
-        Title="KeyBoardBotActionSettings" Height="450" Width="800">
+        Title="Change Keyboardaction" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="Text" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center"/>
+            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Text"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="Delay" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center"/>
+            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" PreviewTextInput="TextBox_Delay_PreviewTextInput" Text="0"/>
+        </StackPanel>
+
+
+        <Grid Grid.Row="2">
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                
+            </Grid.ColumnDefinitions>
+            
+        <Button Grid.Column="0" Style="{StaticResource DarkButton}" Content="Save" Foreground="#2ecc71" Name="Button_Save"/>
+
+            <Button Grid.Column="1" Style="{StaticResource DarkButton}" Content="Delete" Foreground="#ff7675" Name="Button_Delete"/>
+
+        </Grid>
+
+
     </Grid>
 </Window>
