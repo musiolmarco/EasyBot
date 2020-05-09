@@ -196,8 +196,6 @@ namespace EasyBot.Views
         private void Button_Start_Click(object sender, RoutedEventArgs e)
         {
 
-            RightMouseClick(500, 500);
-
             if (Actions.Count >= 1)
             {
                 Thread.Sleep(Delay);
@@ -206,7 +204,19 @@ namespace EasyBot.Views
                 {
                     if (Actions[i] is MouseBotAction)
                     {
+                        MouseBotAction mouseBotAction = (MouseBotAction)Actions[i];
 
+                        int X = mouseBotAction.X;
+                        int Y = mouseBotAction.Y;
+
+                        if (mouseBotAction.Left_Click)
+                        {
+                            LeftMouseClick(X, Y);
+                        }
+                        else
+                        {
+                            RightMouseClick(X, Y);
+                        }
                     }
                     else if (Actions[i] is KeyBoardBotAction)
                     {
