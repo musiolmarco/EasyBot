@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyBot.Views"
         mc:Ignorable="d"
-        Title="Settings" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True">
+        Title="Settings" Icon="/EasyBot;component/Images/EasyBotLogo.png" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True">
 
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="40"/>

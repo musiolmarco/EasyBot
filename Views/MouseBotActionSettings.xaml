@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyBot.Views"
         mc:Ignorable="d"
-        Title="Change Mouseaction" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown" WindowStyle="None" AllowsTransparency="True">
+        Title="Change Mouseaction" Icon="/EasyBot;component/Images/EasyBotLogo.png" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown" WindowStyle="None" AllowsTransparency="True">
 
 
     <WindowChrome.WindowChrome>

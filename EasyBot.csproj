@@ -154,5 +154,8 @@
   <ItemGroup>
     <Resource Include="Colors.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\EasyBotLogo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

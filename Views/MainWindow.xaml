@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:EasyBot.Views"
         xmlns:fa="http://schemas.fontawesome.io/icons/"
         mc:Ignorable="d"
-        Title="EasyBot" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True">
+        Title="EasyBot" Icon="/EasyBot;component/Images/EasyBotLogo.png" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True">
 
 
     <WindowChrome.WindowChrome>
