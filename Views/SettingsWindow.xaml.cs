@@ -20,10 +20,13 @@ namespace EasyBot.Views
     /// </summary>
     public partial class SettingsWindow : Window
     {
-        public SettingsWindow(int Loops, int Delay)
+        public SettingsWindow()
         {
             InitializeComponent();
 
+            TextBox_Loops.Text = MainWindow.Loops.ToString();
+
+            TextBox_Delay.Text = MainWindow.Delay.ToString();
 
         }
 
@@ -35,12 +38,11 @@ namespace EasyBot.Views
 
         private void Button_Save_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow.Loops = Convert.ToInt32(TextBox_Loops.Text);
+            MainWindow.Delay = Convert.ToInt32(TextBox_Delay.Text);
 
+            this.Close();
         }
 
-        private void Button_Delete_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
