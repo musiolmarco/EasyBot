@@ -6,17 +6,35 @@
         xmlns:local="clr-namespace:EasyBot.Views"
         xmlns:fa="http://schemas.fontawesome.io/icons/"
         mc:Ignorable="d"
-        Title="EasyBot" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen">
+        Title="EasyBot" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True">
+
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="40"/>
+    </WindowChrome.WindowChrome>
 
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
             <RowDefinition/>
             <RowDefinition Height="50"/>
             
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0">
+        <Grid VerticalAlignment="Top" Background="Transparent" Height="40">
+            
+            <Label Content="EasyBot" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource DarkLabel}"/>
+            
+            <StackPanel WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Name="WindowControls">
+                
+                <Button Height="40" Width="40" Content="-" Padding="0" Name="Button_Minimize" Style="{StaticResource DarkButton}"/>
+                <Button Height="40" Width="40" Content="x" Padding="0" Name="Button_Close" Style="{StaticResource DarkButton}"/>
+                
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1">
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>

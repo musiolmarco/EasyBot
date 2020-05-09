@@ -31,6 +31,11 @@ namespace EasyBot.Views
         {
             InitializeComponent();
 
+
+            Button_Close.Click += (s, e) => Close();
+
+            Button_Minimize.Click += (s, e) => WindowState = WindowState.Minimized;
+
             listBox = ListBox_Actions;
 
             listBox.ItemsSource = Actions;
