@@ -222,6 +222,8 @@ namespace EasyBot.Views
                     {
 
                     }
+
+                    Thread.Sleep(Actions[i].Delay);
                 }
             }
         }
