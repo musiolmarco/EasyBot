@@ -18,6 +18,10 @@ namespace EasyBot.Views
 
             TextBox_Delay.Text = MainWindow.Delay.ToString();
 
+            Button_Close.Click += (s, e) => Close();
+
+            Button_Minimize.Click += (s, e) => WindowState = WindowState.Minimized;
+
         }
 
         private void TextBox_Numbers_Only(object sender, TextCompositionEventArgs e)
