@@ -91,6 +91,8 @@ namespace EasyBot.Views
         private void Button_Delete_Click(object sender, RoutedEventArgs e)
         {
             MainWindow.DeleteBotAction();
+
+            this.Close();
         }
 
         private void Button_Save_Click(object sender, RoutedEventArgs e)
