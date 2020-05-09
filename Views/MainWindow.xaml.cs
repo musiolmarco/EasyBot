@@ -149,5 +149,11 @@ namespace EasyBot.Views
 
             RefreshListBox();
         }
+
+        private void Button_Deselect_Click(object sender, RoutedEventArgs e)
+        {
+            listBox.SelectedIndex = -1;
+        }
+
     }
 }

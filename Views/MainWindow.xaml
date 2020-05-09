@@ -13,6 +13,7 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="50"/>
+            
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0">
@@ -24,7 +25,13 @@
 
 
 
+            <Grid Grid.Row="0">
 
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                
             <ListBox HorizontalContentAlignment="Center" x:Name="ListBox_Actions" Background="#151515">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
@@ -42,6 +49,10 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
+
+                <Button Content="Deselect" Name="Button_Deselect" Style="{StaticResource DarkButton}" Grid.Row="1" FontSize="15" Click="Button_Deselect_Click" />
+
+            </Grid>
 
             <Grid Grid.Column="1">
 
