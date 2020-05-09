@@ -25,10 +25,20 @@ namespace EasyBot.Views
             InitializeComponent();
         }
 
-        private void TextBox_Number_Only(object sender, TextCompositionEventArgs e)
+        private void TextBox_Numbers_Only(object sender, TextCompositionEventArgs e)
         {
             Regex regex = new Regex("[^0-9]+");
             e.Handled = regex.IsMatch(e.Text);
+        }
+
+        private void Button_Save_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Delete_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

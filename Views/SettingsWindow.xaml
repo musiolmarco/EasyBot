@@ -16,7 +16,7 @@
 
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="Loops" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center"/>
-            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Loops" PreviewTextInput="TextBox_Numbers_Only"/>
+            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Loops" PreviewTextInput="TextBox_Numbers_Only" Text="0"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">

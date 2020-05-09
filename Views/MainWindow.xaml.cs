@@ -33,6 +33,10 @@ namespace EasyBot.Views
 
         public static ListBox listBox;
 
+        public static int Loops = 0;
+
+        public static int Delay = 0;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -126,6 +130,11 @@ namespace EasyBot.Views
 
                 }
 
+            }
+            else
+            {
+                SettingsWindow settingsWindow = new SettingsWindow();
+                settingsWindow.Show();
             }
         }
 

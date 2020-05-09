@@ -73,3 +73,5 @@ C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\KeyBoardBotActionSetting
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\MouseBotActionSettings.g.cs
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\KeyBoardBotActionSettings.baml
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\MouseBotActionSettings.baml
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\SettingsWindow.g.cs
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\Views\SettingsWindow.baml

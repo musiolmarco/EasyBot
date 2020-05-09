@@ -85,6 +85,9 @@
     <Compile Include="Views\MouseBotActionSettings.xaml.cs">
       <DependentUpon>MouseBotActionSettings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SettingsWindow.xaml.cs">
+      <DependentUpon>SettingsWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="ResourceDictionaries\DarkAppereance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -110,6 +113,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\MouseBotActionSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SettingsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
