@@ -16,6 +16,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WindowsInput.Native;
+using WindowsInput;
 
 namespace EasyBot.Views
 {
@@ -220,7 +222,11 @@ namespace EasyBot.Views
                     }
                     else if (Actions[i] is KeyBoardBotAction)
                     {
+                        KeyBoardBotAction keyBoardBotAction = (KeyBoardBotAction)Actions[i];
 
+                        InputSimulator inputSimulator = new InputSimulator();
+
+                        inputSimulator.Keyboard.TextEntry(keyBoardBotAction.Text);
                     }
 
                     Thread.Sleep(Actions[i].Delay);
