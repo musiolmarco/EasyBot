@@ -112,7 +112,7 @@ namespace EasyBot.Views
                 if(ListBox_Actions.SelectedItem is MouseBotAction)
                 {
 
-                    MouseBotActionSettings mouseBotActionSettings = new MouseBotActionSettings((MouseBotAction)ListBox_Actions.SelectedItem);
+                    MouseBotActionSettings mouseBotActionSettings = new MouseBotActionSettings((MouseBotAction)ListBox_Actions.SelectedItem, ListBox_Actions.SelectedIndex);
 
                     mouseBotActionSettings.Show();
 
@@ -130,7 +130,17 @@ namespace EasyBot.Views
 
         public static void ChangeBotAction(BotAction botAction)
         {
+
             listBox.SelectedItem = botAction;
+
+            int Index = listBox.SelectedIndex;
+
+            Actions.Remove((BotAction)listBox.SelectedItem);
+
+            Actions.Insert(Index, botAction);
+
+            RefreshListBox();
+
         }
     }
 }

@@ -16,7 +16,7 @@ namespace EasyBot.Views
 
         private bool SetMouseLocation = false;
 
-        public MouseBotActionSettings(MouseBotAction mouseBotAction)
+        public MouseBotActionSettings(MouseBotAction mouseBotAction, int Index)
         {
             InitializeComponent();
 
@@ -88,5 +88,32 @@ namespace EasyBot.Views
 
         }
 
+        private void Button_Delete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Save_Click(object sender, RoutedEventArgs e)
+        {
+
+            int X = Convert.ToInt32(Label_X_Value.Content);
+            int Y = Convert.ToInt32(Label_Y_Value.Content);
+            int Delay = Convert.ToInt32(TextBox_Delay.Text);
+            bool Left_Click;
+
+            if ((bool)RadioButton_Leftclick.IsChecked)
+            {
+                Left_Click = true;
+            }
+            else
+            {
+                Left_Click = false;
+            }
+
+
+            MouseBotAction mouseBotAction = new MouseBotAction(X, Y, Left_Click, Delay);
+
+            MainWindow.ChangeBotAction(mouseBotAction);
+        }
     }
 }

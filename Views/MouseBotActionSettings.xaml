@@ -49,9 +49,9 @@
 
             </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0" Style="{StaticResource DarkButton}" Content="Save" Foreground="#2ecc71" Name="Button_Save" Click="Button_SetLocation_Click"/>
+            <Button Grid.Column="0" Style="{StaticResource DarkButton}" Content="Save" Foreground="#2ecc71" Name="Button_Save" Click="Button_Save_Click"/>
 
-            <Button Grid.Column="1" Style="{StaticResource DarkButton}" Content="Delete" Foreground="#ff7675" Name="Button_Delete" Click="Button_TestLocation_Click"/>
+            <Button Grid.Column="1" Style="{StaticResource DarkButton}" Content="Delete" Foreground="#ff7675" Name="Button_Delete" Click="Button_Delete_Click"/>
 
         </Grid>
 
