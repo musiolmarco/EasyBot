@@ -13,12 +13,6 @@ namespace EasyBot.Views
     public  partial class MainWindow : Window
     {
 
-        private MouseBotAction TestMouseBotAction = new MouseBotAction(500, 200, true, 200);
-
-        private MouseBotAction TestMouseBotAction2 = new MouseBotAction(500, 200, false, 200);
-
-        private MouseBotAction TestMouseBotAction3 = new MouseBotAction(500, 312, false, 3122);
-
         private static List<BotAction> Actions = new List<BotAction>();
 
         public static ListBox listBox;
@@ -31,7 +25,7 @@ namespace EasyBot.Views
         {
             InitializeComponent();
 
-
+            
             Button_Close.Click += (s, e) => Close();
 
             Button_Minimize.Click += (s, e) => WindowState = WindowState.Minimized;
@@ -39,12 +33,6 @@ namespace EasyBot.Views
             listBox = ListBox_Actions;
 
             listBox.ItemsSource = Actions;
-
-            Actions.Add(TestMouseBotAction);
-
-            Actions.Add(TestMouseBotAction2);
-
-            Actions.Add(TestMouseBotAction3);
 
         }
 
