@@ -127,5 +127,10 @@ namespace EasyBot.Views
 
             }
         }
+
+        public static void ChangeBotAction(BotAction botAction)
+        {
+            listBox.SelectedItem = botAction;
+        }
     }
 }

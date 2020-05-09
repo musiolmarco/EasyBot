@@ -22,7 +22,7 @@
                 <Label Content="Y: " Style="{StaticResource DarkLabel}"/>
                 <Label Content="" Name="Label_Y_Value" Style="{StaticResource DarkLabel}"/>
 
-                <Button Content="Set location" Style="{StaticResource DarkButton}" Foreground="#00b894" Name="Button_SetLocation" Margin="10,0,0,0" Click="Button_SetLocation_Click_" />
+                <Button Content="Set location" Style="{StaticResource DarkButton}" Foreground="#00b894" Name="Button_SetLocation" Margin="10,0,0,0" Click="Button_SetLocation_Click" />
                 <Button Content="Test location" Style="{StaticResource DarkButton}" Foreground="#f0932b" Margin="20,0,0,0" Name="Button_TestLocation" Click="Button_TestLocation_Click"/>
             </StackPanel>
 
@@ -49,9 +49,9 @@
 
             </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0" Style="{StaticResource DarkButton}" Content="Save" Foreground="#2ecc71" Name="Button_Save"/>
+            <Button Grid.Column="0" Style="{StaticResource DarkButton}" Content="Save" Foreground="#2ecc71" Name="Button_Save" Click="Button_SetLocation_Click"/>
 
-            <Button Grid.Column="1" Style="{StaticResource DarkButton}" Content="Delete" Foreground="#ff7675" Name="Button_Delete"/>
+            <Button Grid.Column="1" Style="{StaticResource DarkButton}" Content="Delete" Foreground="#ff7675" Name="Button_Delete" Click="Button_TestLocation_Click"/>
 
         </Grid>
 
