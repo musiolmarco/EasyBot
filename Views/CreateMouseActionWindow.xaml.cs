@@ -23,6 +23,12 @@ namespace EasyBot.Views
 
             Label_X_Value.Content = 0;
             Label_Y_Value.Content = 0;
+
+            Button_Close.Click += (s, e) => Close();
+
+            Button_Minimize.Click += (s, e) => WindowState = WindowState.Minimized;
+
+
         }
 
         private void SetPosition(int x, int y)
