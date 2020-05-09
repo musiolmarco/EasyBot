@@ -29,5 +29,19 @@ namespace EasyBot.Views
             TextBox_Delay.Text = keyBoardBotAction.Delay.ToString();
 
         }
+
+        private void Button_Save_Click(object sender, RoutedEventArgs e)
+        {
+
+            string Text = TextBox_Text.Text;
+            int Delay = Convert.ToInt32(TextBox_Delay.Text);
+
+            KeyBoardBotAction keyBoardBotAction = new KeyBoardBotAction(Text, Delay);
+
+            MainWindow.ChangeBotAction(keyBoardBotAction);
+
+            this.Close();
+
+        }
     }
 }
