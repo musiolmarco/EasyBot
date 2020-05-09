@@ -5,20 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyBot.Views"
         mc:Ignorable="d"
-        Title="Add Action" Height="100" Width="400" Background="#151515" WindowStartupLocation="CenterScreen">
+        Title="Add Action" Height="100" Width="400" Background="#151515" WindowStartupLocation="CenterScreen"  WindowStyle="None" AllowsTransparency="True">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="40"/>
+    </WindowChrome.WindowChrome>
 
     <Window.Resources>
         <ResourceDictionary Source="../ResourceDictionaries/DarkAppereance.xaml"/>
     </Window.Resources>
 
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+    <StackPanel>
 
-        <Button Grid.Column="0" Content="MouseAction" Style="{StaticResource DarkButton}" Name="Button_AddMouseAction" Click="Button_AddMouseAction_Click"/>
-        <Button Grid.Column="1" Content="KeyBoardAction" Style="{StaticResource DarkButton}" Name="Button_AddKeyBoardAction" Click="Button_AddKeyBoardAction_Click"/>
+        <Grid VerticalAlignment="Top" Background="Transparent" Height="40">
 
-    </Grid>
+            <Label Content="EasyBot" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource DarkLabel}"/>
+
+            <StackPanel WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Name="WindowControls">
+
+                <Button Height="40" Width="40" Content="-" Padding="0" Name="Button_Minimize" Style="{StaticResource DarkButton}"/>
+                <Button Height="40" Width="40" Content="x" Padding="0" Name="Button_Close" Style="{StaticResource DarkButton}"/>
+
+            </StackPanel>
+        </Grid>
+
+        <Grid VerticalAlignment="Stretch">
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Content="MouseAction" Style="{StaticResource DarkButton}" Name="Button_AddMouseAction" Click="Button_AddMouseAction_Click" Margin="0,0,0,-66"/>
+            <Button Grid.Column="1" Content="KeyBoardAction" Style="{StaticResource DarkButton}" Name="Button_AddKeyBoardAction" Click="Button_AddKeyBoardAction_Click" Margin="0,0,0,-66"/>
+
+        </Grid>
+    </StackPanel>
 </Window>

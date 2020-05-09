@@ -10,6 +10,10 @@ namespace EasyBot.Views
         public AddActionWindow()
         {
             InitializeComponent();
+
+            Button_Close.Click += (s, e) => Close();
+
+            Button_Minimize.Click += (s, e) => WindowState = WindowState.Minimized;
         }
 
         private void Button_AddMouseAction_Click(object sender, RoutedEventArgs e)
