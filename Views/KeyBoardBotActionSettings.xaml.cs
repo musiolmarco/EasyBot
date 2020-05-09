@@ -18,6 +18,10 @@ namespace EasyBot.Views
 
             TextBox_Delay.Text = keyBoardBotAction.Delay.ToString();
 
+            Button_Close.Click += (s, e) => Close();
+
+            Button_Minimize.Click += (s, e) => WindowState = WindowState.Minimized;
+
         }
 
         private void Button_Save_Click(object sender, RoutedEventArgs e)
