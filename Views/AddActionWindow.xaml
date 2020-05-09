@@ -17,14 +17,14 @@
 
     <StackPanel>
 
-        <Grid VerticalAlignment="Top" Background="Transparent" Height="40">
+        <Grid VerticalAlignment="Top" Background="#0B0B0B" Height="40">
 
             <Label Content="EasyBot" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource DarkLabel}"/>
 
             <StackPanel WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Name="WindowControls">
 
-                <Button Height="40" Width="40" Content="-" Padding="0" Name="Button_Minimize" Style="{StaticResource DarkButton}"/>
-                <Button Height="40" Width="40" Content="x" Padding="0" Name="Button_Close" Style="{StaticResource DarkButton}"/>
+                <Button Height="40" Width="40" Content="-" Padding="0" Name="Button_Minimize" Style="{StaticResource DarkButton}" Background="Transparent"/>
+                <Button Height="40" Width="40" Content="x" Padding="0" Name="Button_Close" Style="{StaticResource DarkButton}" Background="Transparent"/>
 
             </StackPanel>
         </Grid>
