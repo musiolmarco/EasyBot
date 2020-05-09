@@ -79,7 +79,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Content="Start" Grid.Column="1" Style="{StaticResource DarkButton}" Typography.Capitals="AllSmallCaps" Name="Button_Start"/>
+            <Button Content="Start" Grid.Column="1" Style="{StaticResource DarkButton}" Typography.Capitals="AllSmallCaps" Name="Button_Start" Click="Button_Start_Click"/>
             <Button Content="+" Grid.Column="0" Style="{StaticResource DarkButton}" Name="Button_Add" Click="Button_Add_Click"/>
             <Button Grid.Column="2" Style="{StaticResource DarkButton}" Name="Button_Settings" Click="Button_Settings_Click">
                 <fa:ImageAwesome Icon="Cog" Style="{StaticResource DarkButtonAwesome}"/>

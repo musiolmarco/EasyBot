@@ -3,6 +3,7 @@ using EasyBot.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -166,19 +167,45 @@ namespace EasyBot.Views
             listBox.SelectedIndex = -1;
         }
 
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        static extern bool SetCursorPos(int x, int y);
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern void mouse_event(int dwFlags, int dx, int dy, int cButtons, int dwExtraInfo);
+
+        public const int MOUSEEVENTF_LEFTDOWN = 0x02;
+        public const int MOUSEEVENTF_LEFTUP = 0x04;
+        private const int MOUSEEVENTF_RIGHTDOWN = 0x08;
+        private const int MOUSEEVENTF_RIGHTUP = 0x10;
+
+
+        public static void LeftMouseClick(int X, int Y)
+        {
+            SetCursorPos(X, Y);
+            mouse_event(MOUSEEVENTF_LEFTDOWN, X, Y, 0, 0);
+            mouse_event(MOUSEEVENTF_LEFTUP, X, Y, 0, 0);
+        }
+
+        public static void RightMouseClick(int X, int Y)
+        {
+            SetCursorPos(X, Y);
+            mouse_event(MOUSEEVENTF_RIGHTDOWN, X, Y, 0, 0);
+            mouse_event(MOUSEEVENTF_RIGHTUP, X, Y, 0, 0);
+        }
+
         private void Button_Start_Click(object sender, RoutedEventArgs e)
         {
+
+            RightMouseClick(500, 500);
+
             if (Actions.Count >= 1)
             {
-
                 Thread.Sleep(Delay);
                 
                 for (int i = 0; i <= Actions.Count - 1; i++)
                 {
                     if (Actions[i] is MouseBotAction)
                     {
-
-
 
                     }
                     else if (Actions[i] is KeyBoardBotAction)
