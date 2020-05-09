@@ -7,7 +7,7 @@
         <Setter Property="Background" Value="#151515"/>
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="FontSize" Value="20"/>
-        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="FontFamily" Value="Century Gothic"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="BorderThickness" Value="0"/>
     </Style>
@@ -21,13 +21,14 @@
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="FontSize" Value="20"/>
-        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="FontFamily" Value="Century Gothic"/>
     </Style>
 
     <Style TargetType="RadioButton" x:Key="DarkRadioButton">
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="FontSize" Value="20"/>
         <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontFamily" Value="Century Gothic"/>
     </Style>
 
     <Style TargetType="TextBox" x:Key="DarkTextBox">
@@ -36,6 +37,7 @@
         <Setter Property="Height" Value="30"/>
         <Setter Property="FontSize" Value="20"/>
         <Setter Property="TextAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="Century Gothic"/>
     </Style>
 
 </ResourceDictionary>
