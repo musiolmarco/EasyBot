@@ -5,8 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyBot.Views"
         mc:Ignorable="d"
-        Title="MouseBotActionSettings" Height="450" Width="800">
+        Title="Change Mouseaction" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown">
+
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <StackPanel Orientation="Horizontal">
+                <Label Content="X: " Style="{StaticResource DarkLabel}"/>
+                <Label Content="" Name="Label_X_Value" Style="{StaticResource DarkLabel}"/>
+                <Label Content="Y: " Style="{StaticResource DarkLabel}"/>
+                <Label Content="" Name="Label_Y_Value" Style="{StaticResource DarkLabel}"/>
+
+                <Button Content="Set location" Style="{StaticResource DarkButton}" Foreground="#00b894" Name="Button_SetLocation" Margin="10,0,0,0" Click="Button_SetLocation_Click"/>
+                <Button Content="Test location" Style="{StaticResource DarkButton}" Foreground="#f0932b" Margin="20,0,0,0" Name="Button_TestLocation" Click="Button_TestLocation_Click"/>
+            </StackPanel>
+
+            <Label Content="Press F8 to set location" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center" FontSize="15" Visibility="Collapsed" x:Name="Label_SetLocationInfo"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+            <RadioButton Content="Left click" Style="{StaticResource DarkRadioButton}" Name="RadioButton_Leftclick" Margin="0,0,10,0" IsChecked="True"/>
+            <RadioButton Content="Right click" Style="{StaticResource DarkRadioButton}" Name="RadioButton_Rightclick" Margin="10,0,10,0"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
+            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" Text="0" FontWeight="Bold" PreviewTextInput="TextBox_Delay_PreviewTextInput"/>
+            <Label Content="Delay (in milliseconds)" Style="{StaticResource DarkLabel}"/>
+        </StackPanel>
+
+
+        <Grid Grid.Row="3">
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Style="{StaticResource DarkButton}" Content="Save" Foreground="#2ecc71" Name="Button_Save"/>
+
+            <Button Grid.Column="1" Style="{StaticResource DarkButton}" Content="Delete" Foreground="#ff7675" Name="Button_Delete"/>
+
+        </Grid>
+
+
+
     </Grid>
 </Window>
