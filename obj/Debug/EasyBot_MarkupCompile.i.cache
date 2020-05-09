@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Marco\Documents\GitHub\EasyBot\App.xaml
-7-1939117137
+81766710336
 
-141149334667
+152070678822
 161979399254
-ResourceDictionaries\DarkAppereance.xaml;Views\AddActionWindow.xaml;Views\CreateKeyboardActionWindow.xaml;Views\CreateMouseActionWindow.xaml;Views\KeyBoardBotActionSettings.xaml;Views\MainWindow.xaml;Views\MouseBotActionSettings.xaml;
+ResourceDictionaries\DarkAppereance.xaml;Views\AddActionWindow.xaml;Views\CreateKeyboardActionWindow.xaml;Views\CreateMouseActionWindow.xaml;Views\KeyBoardBotActionSettings.xaml;Views\MainWindow.xaml;Views\MouseBotActionSettings.xaml;Views\SettingsWindow.xaml;
 
 True
 
