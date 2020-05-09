@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyBot.Views"
         mc:Ignorable="d"
-        Title="Change Mouseaction" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown">
+        Title="Change Mouseaction" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -22,8 +22,8 @@
                 <Label Content="Y: " Style="{StaticResource DarkLabel}"/>
                 <Label Content="" Name="Label_Y_Value" Style="{StaticResource DarkLabel}"/>
 
-                <Button Content="Set location" Style="{StaticResource DarkButton}" Foreground="#00b894" Name="Button_SetLocation" Margin="10,0,0,0" Click="Button_SetLocation_Click"/>
-                <Button Content="Test location" Style="{StaticResource DarkButton}" Foreground="#f0932b" Margin="20,0,0,0" Name="Button_TestLocation" Click="Button_TestLocation_Click"/>
+                <Button Content="Set location" Style="{StaticResource DarkButton}" Foreground="#00b894" Name="Button_SetLocation" Margin="10,0,0,0" />
+                <Button Content="Test location" Style="{StaticResource DarkButton}" Foreground="#f0932b" Margin="20,0,0,0" Name="Button_TestLocation"/>
             </StackPanel>
 
             <Label Content="Press F8 to set location" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center" FontSize="15" Visibility="Collapsed" x:Name="Label_SetLocationInfo"/>
@@ -35,7 +35,7 @@
         </StackPanel>
 
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
-            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" Text="0" FontWeight="Bold" PreviewTextInput="TextBox_Delay_PreviewTextInput"/>
+            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" Text="0" FontWeight="Bold" />
             <Label Content="Delay (in milliseconds)" Style="{StaticResource DarkLabel}"/>
         </StackPanel>
 

@@ -23,6 +23,22 @@ namespace EasyBot.Views
         public MouseBotActionSettings(MouseBotAction mouseBotAction)
         {
             InitializeComponent();
+
+            Label_X_Value.Content = mouseBotAction.X;
+
+            Label_Y_Value.Content = mouseBotAction.Y;
+
+            if (mouseBotAction.Left_Click)
+            {
+                RadioButton_Leftclick.IsChecked = true;
+            }
+            else
+            {
+                RadioButton_Rightclick.IsChecked = true;
+            }
+
+            TextBox_Delay.Text = mouseBotAction.Delay.ToString();
+
         }
     }
 }
