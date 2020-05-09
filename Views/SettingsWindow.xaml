@@ -16,12 +16,12 @@
 
         <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="Loops" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center"/>
-            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Loops" PreviewTextInput="TextBox_Number_Only"/>
+            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Loops" PreviewTextInput="TextBox_Numbers_Only"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="Delay" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center"/>
-            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" Text="0" PreviewTextInput="TextBox_Number_Only"/>
+            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" Text="0" PreviewTextInput="TextBox_Numbers_Only"/>
         </StackPanel>
 
 
