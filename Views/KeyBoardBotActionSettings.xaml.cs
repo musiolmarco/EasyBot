@@ -50,5 +50,12 @@ namespace EasyBot.Views
             Regex regex = new Regex("[^0-9]+");
             e.Handled = regex.IsMatch(e.Text);
         }
+
+        private void Button_Delete_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.DeleteBotAction();
+
+            this.Close();
+        }
     }
 }

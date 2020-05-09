@@ -20,7 +20,7 @@ namespace EasyBot.Views
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public  partial class MainWindow : Window
     {
 
         private MouseBotAction TestMouseBotAction = new MouseBotAction(500, 200, true, 200);
@@ -64,6 +64,7 @@ namespace EasyBot.Views
         {
 
             listBox.Items.Refresh();
+
 
         }
 
