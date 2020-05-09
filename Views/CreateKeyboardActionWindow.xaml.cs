@@ -14,6 +14,11 @@ namespace EasyBot.Views
         public CreateKeyboardActionWindow()
         {
             InitializeComponent();
+
+            Button_Close.Click += (s, e) => Close();
+
+            Button_Minimize.Click += (s, e) => WindowState = WindowState.Minimized;
+
         }
 
         private void TextBox_Delay_PreviewTextInput(object sender, TextCompositionEventArgs e)

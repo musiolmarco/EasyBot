@@ -5,26 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyBot.Views"
         mc:Ignorable="d"
-        Title="Create Keyboardaction" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen">
-    <Grid>
+        Title="Create Keyboardaction" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True">
 
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="40"/>
+    </WindowChrome.WindowChrome>
+
+    <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid VerticalAlignment="Top" Background="Transparent" Height="40">
+
+            <Label Content="EasyBot" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource DarkLabel}"/>
+
+            <StackPanel WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Name="WindowControls">
+
+                <Button Height="40" Width="40" Content="-" Padding="0" Name="Button_Minimize" Style="{StaticResource DarkButton}"/>
+                <Button Height="40" Width="40" Content="x" Padding="0" Name="Button_Close" Style="{StaticResource DarkButton}"/>
+
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="Text" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center"/>
             <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Text"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="Delay" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center"/>
             <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" PreviewTextInput="TextBox_Delay_PreviewTextInput" Text="0"/>
         </StackPanel>
 
-        <Button Grid.Row="2" Style="{StaticResource DarkButton}" Content="Create" Foreground="#2ecc71" Name="Button_Create" Click="Button_Create_Click"/>
+        <Button Grid.Row="3" Style="{StaticResource DarkButton}" Content="Create" Foreground="#2ecc71" Name="Button_Create" Click="Button_Create_Click"/>
 
 
     </Grid>
