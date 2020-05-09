@@ -20,7 +20,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label Content="Delay" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center"/>
+            <Label Content="Delay (in milliseconds)" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center"/>
             <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" Text="0" PreviewTextInput="TextBox_Numbers_Only"/>
         </StackPanel>
 

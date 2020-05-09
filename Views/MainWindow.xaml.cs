@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -165,5 +166,27 @@ namespace EasyBot.Views
             listBox.SelectedIndex = -1;
         }
 
+        private void Button_Start_Click(object sender, RoutedEventArgs e)
+        {
+            if (Actions.Count >= 1)
+            {
+
+                Thread.Sleep(Delay);
+                
+                for (int i = 0; i <= Actions.Count - 1; i++)
+                {
+                    if (Actions[i] is MouseBotAction)
+                    {
+
+
+
+                    }
+                    else if (Actions[i] is KeyBoardBotAction)
+                    {
+
+                    }
+                }
+            }
+        }
     }
 }
