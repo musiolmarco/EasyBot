@@ -198,6 +198,8 @@ namespace EasyBot.Views
         private void Button_Start_Click(object sender, RoutedEventArgs e)
         {
 
+            this.Hide();
+
             if (Actions.Count >= 1)
             {
                 Thread.Sleep(Delay);
@@ -229,9 +231,11 @@ namespace EasyBot.Views
                         inputSimulator.Keyboard.TextEntry(keyBoardBotAction.Text);
                     }
 
-                    Thread.Sleep(Actions[i].Delay);
+                    Thread.Sleep(Actions[i].Delay); 
                 }
             }
+
+            this.Show();
         }
     }
 }
