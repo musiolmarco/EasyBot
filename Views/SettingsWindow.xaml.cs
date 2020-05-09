@@ -20,9 +20,11 @@ namespace EasyBot.Views
     /// </summary>
     public partial class SettingsWindow : Window
     {
-        public SettingsWindow()
+        public SettingsWindow(int Loops, int Delay)
         {
             InitializeComponent();
+
+
         }
 
         private void TextBox_Numbers_Only(object sender, TextCompositionEventArgs e)
