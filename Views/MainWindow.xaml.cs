@@ -142,5 +142,10 @@ namespace EasyBot.Views
             RefreshListBox();
 
         }
+
+        public static void DeleteBotAction()
+        {
+            Actions.Remove((BotAction)listBox.SelectedItem);
+        }
     }
 }

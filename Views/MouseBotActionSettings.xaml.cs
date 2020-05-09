@@ -114,6 +114,9 @@ namespace EasyBot.Views
             MouseBotAction mouseBotAction = new MouseBotAction(X, Y, Left_Click, Delay);
 
             MainWindow.ChangeBotAction(mouseBotAction);
+
+            this.Close();
         }
+
     }
 }
