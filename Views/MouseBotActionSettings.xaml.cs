@@ -35,6 +35,10 @@ namespace EasyBot.Views
 
             TextBox_Delay.Text = mouseBotAction.Delay.ToString();
 
+            Button_Close.Click += (s, e) => Close();
+
+            Button_Minimize.Click += (s, e) => WindowState = WindowState.Minimized;
+
         }
         private void SetPosition(int x, int y)
         {

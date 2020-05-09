@@ -5,17 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasyBot.Views"
         mc:Ignorable="d"
-        Title="Change Mouseaction" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown">
+        Title="Change Mouseaction" Height="450" Width="800" Background="#151515" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown" WindowStyle="None" AllowsTransparency="True">
 
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="40"/>
+    </WindowChrome.WindowChrome>
+    
+    
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" >
+        <Grid VerticalAlignment="Top" Background="Transparent" Height="40">
+
+            <Label Content="EasyBot" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource DarkLabel}"/>
+
+            <StackPanel WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Name="WindowControls">
+
+                <Button Height="40" Width="40" Content="-" Padding="0" Name="Button_Minimize" Style="{StaticResource DarkButton}"/>
+                <Button Height="40" Width="40" Content="x" Padding="0" Name="Button_Close" Style="{StaticResource DarkButton}"/>
+
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" >
             <StackPanel Orientation="Horizontal">
                 <Label Content="X: " Style="{StaticResource DarkLabel}"/>
                 <Label Content="" Name="Label_X_Value" Style="{StaticResource DarkLabel}"/>
@@ -29,18 +48,18 @@
             <Label Content="Press F8 to set location" Style="{StaticResource DarkLabel}" HorizontalAlignment="Center" FontSize="15" Visibility="Collapsed" x:Name="Label_SetLocationInfo"/>
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
             <RadioButton Content="Left click" Style="{StaticResource DarkRadioButton}" Name="RadioButton_Leftclick" Margin="0,0,10,0" IsChecked="True"/>
             <RadioButton Content="Right click" Style="{StaticResource DarkRadioButton}" Name="RadioButton_Rightclick" Margin="10,0,10,0"/>
         </StackPanel>
 
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3">
             <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" Text="0" FontWeight="Bold" PreviewTextInput="TextBox_Delay_PreviewTextInput"/>
             <Label Content="Delay (in milliseconds)" Style="{StaticResource DarkLabel}"/>
         </StackPanel>
 
 
-        <Grid Grid.Row="3">
+        <Grid Grid.Row="4">
 
             <Grid.ColumnDefinitions>
 
