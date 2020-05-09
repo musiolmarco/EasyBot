@@ -190,7 +190,7 @@ namespace EasyBot.Views
             {
                 Thread.Sleep(Delay);
 
-                for(int i = 0; i <= Loops; i++) { 
+                for(int l = 0; l <= Loops; l++) { 
                 
                 for (int i = 0; i <= Actions.Count - 1; i++)
                 {
