@@ -35,7 +35,7 @@
         </StackPanel>
 
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
-            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" Text="0" FontWeight="Bold" />
+            <TextBox Style="{StaticResource DarkTextBox}" Name="TextBox_Delay" Text="0" FontWeight="Bold" PreviewTextInput="TextBox_Delay_PreviewTextInput"/>
             <Label Content="Delay (in milliseconds)" Style="{StaticResource DarkLabel}"/>
         </StackPanel>
 
