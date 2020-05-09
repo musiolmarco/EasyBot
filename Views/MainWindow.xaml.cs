@@ -189,6 +189,8 @@ namespace EasyBot.Views
             if (Actions.Count >= 1)
             {
                 Thread.Sleep(Delay);
+
+                for(int i = 0; i <= Loops; i++) { 
                 
                 for (int i = 0; i <= Actions.Count - 1; i++)
                 {
@@ -219,6 +221,7 @@ namespace EasyBot.Views
 
                     Thread.Sleep(Actions[i].Delay); 
                 }
+            }
             }
 
             this.Show();
