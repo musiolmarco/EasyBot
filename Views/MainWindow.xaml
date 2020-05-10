@@ -22,7 +22,7 @@
             
         </Grid.RowDefinitions>
 
-        <Grid VerticalAlignment="Top" Background="#0B0B0B" Height="40">
+        <Grid VerticalAlignment="Top" Background="#2f3542" Height="40">
             
             <Label Content="EasyBot" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource DarkLabel}"/>
             

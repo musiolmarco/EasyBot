@@ -114,6 +114,7 @@ namespace EasyBot.Views
             {
                 Delay = 0;
             }
+
             bool Left_Click;
 
             if ((bool)RadioButton_Leftclick.IsChecked)
