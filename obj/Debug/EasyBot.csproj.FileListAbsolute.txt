@@ -24,7 +24,6 @@ C:\Users\Marco\Documents\GitHub\EasyBot\bin\Debug\EasyBot.exe
 C:\Users\Marco\Documents\GitHub\EasyBot\bin\Debug\EasyBot.pdb
 C:\Users\Marco\Documents\GitHub\EasyBot\bin\Debug\FontAwesome.WPF.dll
 C:\Users\Marco\Documents\GitHub\EasyBot\bin\Debug\FontAwesome.WPF.xml
-C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\EasyBot.csprojAssemblyReference.cache
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\App.g.cs
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\EasyBot_MarkupCompile.cache
 C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\EasyBot_MarkupCompile.lref

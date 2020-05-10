@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("colors.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("easybotlogo.ico")]
 
 

@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Marco\Documents\GitHub\EasyBot\obj\Debug\
+C:\Users\Marco\Documents\GitHub\EasyBot\obj\Release\
 EasyBot
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Marco\Documents\GitHub\EasyBot\App.xaml
 81766710336
 
@@ -16,5 +16,5 @@ C:\Users\Marco\Documents\GitHub\EasyBot\App.xaml
 17630544304
 ResourceDictionaries\DarkAppereance.xaml;Views\AddActionWindow.xaml;Views\CreateKeyboardActionWindow.xaml;Views\CreateMouseActionWindow.xaml;Views\KeyBoardBotActionSettings.xaml;Views\MainWindow.xaml;Views\MouseBotActionSettings.xaml;Views\SettingsWindow.xaml;
 
-False
+True
 
