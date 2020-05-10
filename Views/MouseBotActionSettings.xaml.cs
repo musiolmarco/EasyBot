@@ -106,11 +106,11 @@ namespace EasyBot.Views
             int Y = Convert.ToInt32(Label_Y_Value.Content);
             int Delay;
 
-            if (TextBox_Delay.Text != "")
+            try
             {
                 Delay = Convert.ToInt32(TextBox_Delay.Text);
             }
-            else
+            catch
             {
                 Delay = 0;
             }

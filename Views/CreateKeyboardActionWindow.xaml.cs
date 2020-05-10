@@ -33,10 +33,10 @@ namespace EasyBot.Views
 
             int Delay;
 
-            if(TextBox_Delay.Text != "") {
+            try{
                 Delay = Convert.ToInt32(TextBox_Delay.Text);
             }
-            else
+            catch
             {
                 Delay = 0;
             }

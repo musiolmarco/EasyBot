@@ -32,8 +32,25 @@ namespace EasyBot.Views
 
         private void Button_Save_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow.Loops = Convert.ToInt32(TextBox_Loops.Text);
+
+            try
+            {
+                MainWindow.Loops = Convert.ToInt32(TextBox_Loops.Text);
+            }
+            catch
+            {
+                MainWindow.Loops = 0;
+            }
+
+
+            try { 
             MainWindow.Delay = Convert.ToInt32(TextBox_Delay.Text);
+
+            }
+            catch
+            {
+                MainWindow.Delay = 0;
+            }
 
             this.Close();
         }

@@ -28,7 +28,17 @@ namespace EasyBot.Views
         {
 
             string Text = TextBox_Text.Text;
-            int Delay = Convert.ToInt32(TextBox_Delay.Text);
+
+            int Delay;
+
+            try
+            {
+                Delay = Convert.ToInt32(TextBox_Delay.Text);
+            }
+            catch
+            {
+                Delay = 0;
+            }
 
             KeyBoardBotAction keyBoardBotAction = new KeyBoardBotAction(Text, Delay);
 
