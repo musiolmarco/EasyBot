@@ -20,11 +20,11 @@ namespace EasyBot.Views
         {
             InitializeComponent();
 
-            Label_X_Value.Content = mouseBotAction.X;
+            Label_X_Value.Content = mouseBotAction.x;
 
-            Label_Y_Value.Content = mouseBotAction.Y;
+            Label_Y_Value.Content = mouseBotAction.y;
 
-            if (mouseBotAction.Left_Click)
+            if (mouseBotAction.leftClick)
             {
                 RadioButton_Leftclick.IsChecked = true;
             }
@@ -33,7 +33,7 @@ namespace EasyBot.Views
                 RadioButton_Rightclick.IsChecked = true;
             }
 
-            TextBox_Delay.Text = mouseBotAction.Delay.ToString();
+            TextBox_Delay.Text = mouseBotAction.delay.ToString();
 
             Button_Close.Click += (s, e) => Close();
 
@@ -85,10 +85,10 @@ namespace EasyBot.Views
         private void Button_TestLocation_Click(object sender, RoutedEventArgs e)
         {
 
-            int X = Convert.ToInt32(Label_X_Value.Content);
-            int Y = Convert.ToInt32(Label_Y_Value.Content);
+            int x = Convert.ToInt32(Label_X_Value.Content);
+            int y = Convert.ToInt32(Label_Y_Value.Content);
 
-            SetPosition(X, Y);
+            SetPosition(x, y);
 
         }
 
@@ -102,32 +102,32 @@ namespace EasyBot.Views
         private void Button_Save_Click(object sender, RoutedEventArgs e)
         {
 
-            int X = Convert.ToInt32(Label_X_Value.Content);
-            int Y = Convert.ToInt32(Label_Y_Value.Content);
-            int Delay;
+            int x = Convert.ToInt32(Label_X_Value.Content);
+            int y = Convert.ToInt32(Label_Y_Value.Content);
+            int delay;
 
             try
             {
-                Delay = Convert.ToInt32(TextBox_Delay.Text);
+                delay = Convert.ToInt32(TextBox_Delay.Text);
             }
             catch
             {
-                Delay = 0;
+                delay = 0;
             }
 
-            bool Left_Click;
+            bool leftClick;
 
             if ((bool)RadioButton_Leftclick.IsChecked)
             {
-                Left_Click = true;
+                leftClick = true;
             }
             else
             {
-                Left_Click = false;
+                leftClick = false;
             }
 
 
-            MouseBotAction mouseBotAction = new MouseBotAction(X, Y, Left_Click, Delay);
+            MouseBotAction mouseBotAction = new MouseBotAction(x, y, leftClick, delay);
 
             MainWindow.ChangeBotAction(mouseBotAction);
 

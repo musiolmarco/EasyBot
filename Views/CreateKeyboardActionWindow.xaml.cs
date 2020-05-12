@@ -29,19 +29,19 @@ namespace EasyBot.Views
 
         private void Button_Create_Click(object sender, RoutedEventArgs e)
         {
-            string Text = TextBox_Text.Text;
+            string text = TextBox_Text.Text;
 
-            int Delay;
+            int delay;
 
             try{
-                Delay = Convert.ToInt32(TextBox_Delay.Text);
+                delay = Convert.ToInt32(TextBox_Delay.Text);
             }
             catch
             {
-                Delay = 0;
+                delay = 0;
             }
 
-            KeyBoardBotAction keyBoardBotAction = new KeyBoardBotAction(Text, Delay);
+            KeyBoardBotAction keyBoardBotAction = new KeyBoardBotAction(text, delay);
 
             MainWindow.AddBotAction(keyBoardBotAction);
 

@@ -13,13 +13,13 @@ namespace EasyBot.Views
     public  partial class MainWindow : Window
     {
 
-        private static List<BotAction> Actions = new List<BotAction>();
+        private static List<BotAction> actions = new List<BotAction>();
 
         public static ListBox listBox;
 
-        public static int Loops = 0;
+        public static int loops = 0;
 
-        public static int Delay = 0;
+        public static int delay = 0;
 
         public MainWindow()
         {
@@ -32,7 +32,7 @@ namespace EasyBot.Views
 
             listBox = ListBox_Actions;
 
-            listBox.ItemsSource = Actions;
+            listBox.ItemsSource = actions;
 
         }
 
@@ -44,7 +44,7 @@ namespace EasyBot.Views
 
         public static void AddBotAction(BotAction botAction)
         {
-            Actions.Add(botAction);
+            actions.Add(botAction);
         }
 
         public static void RefreshListBox()
@@ -60,13 +60,13 @@ namespace EasyBot.Views
 
             if(ListBox_Actions.SelectedIndex != -1 && ListBox_Actions.SelectedIndex != 0) { 
 
-            int NewIndex = ListBox_Actions.SelectedIndex - 1;
+            int newIndex = ListBox_Actions.SelectedIndex - 1;
 
             BotAction botAction = (BotAction) ListBox_Actions.SelectedItem;
 
-            Actions.Remove(botAction);
+            actions.Remove(botAction);
 
-            Actions.Insert(NewIndex, botAction);
+            actions.Insert(newIndex, botAction);
 
 
             RefreshListBox();
@@ -76,16 +76,16 @@ namespace EasyBot.Views
 
         private void Button_DOWN_Click(object sender, RoutedEventArgs e)
         {
-            if(ListBox_Actions.SelectedIndex != -1 && ListBox_Actions.SelectedIndex != Actions.Count - 1)
+            if(ListBox_Actions.SelectedIndex != -1 && ListBox_Actions.SelectedIndex != actions.Count - 1)
             {
 
-                int NewIndex = ListBox_Actions.SelectedIndex + 1;
+                int newIndex = ListBox_Actions.SelectedIndex + 1;
 
                 BotAction botAction = (BotAction)ListBox_Actions.SelectedItem;
 
-                Actions.Remove(botAction);
+                actions.Remove(botAction);
 
-                Actions.Insert(NewIndex, botAction);
+                actions.Insert(newIndex, botAction);
 
                 RefreshListBox();
 
@@ -126,11 +126,11 @@ namespace EasyBot.Views
 
             listBox.SelectedItem = botAction;
 
-            int Index = listBox.SelectedIndex;
+            int index = listBox.SelectedIndex;
 
-            Actions.Remove((BotAction)listBox.SelectedItem);
+            actions.Remove((BotAction)listBox.SelectedItem);
 
-            Actions.Insert(Index, botAction);
+            actions.Insert(index, botAction);
 
             RefreshListBox();
 
@@ -138,7 +138,7 @@ namespace EasyBot.Views
 
         public static void DeleteBotAction()
         {
-            Actions.Remove((BotAction)listBox.SelectedItem);
+            actions.Remove((BotAction)listBox.SelectedItem);
 
             RefreshListBox();
         }
@@ -179,40 +179,40 @@ namespace EasyBot.Views
 
             this.Hide();
 
-            if (Actions.Count >= 1)
+            if (actions.Count >= 1)
             {
-                Thread.Sleep(Delay);
+                Thread.Sleep(delay);
 
-                for(int l = 0; l <= Loops; l++) { 
+                for(int l = 0; l <= loops; l++) { 
                 
-                for (int i = 0; i <= Actions.Count - 1; i++)
+                for (int i = 0; i <= actions.Count - 1; i++)
                 {
-                    if (Actions[i] is MouseBotAction)
+                    if (actions[i] is MouseBotAction)
                     {
-                        MouseBotAction mouseBotAction = (MouseBotAction)Actions[i];
+                        MouseBotAction mouseBotAction = (MouseBotAction)actions[i];
 
-                        int X = mouseBotAction.X;
-                        int Y = mouseBotAction.Y;
+                        int x = mouseBotAction.x;
+                        int y = mouseBotAction.y;
 
-                        if (mouseBotAction.Left_Click)
+                        if (mouseBotAction.leftClick)
                         {
-                            LeftMouseClick(X, Y);
+                            LeftMouseClick(x, y);
                         }
                         else
                         {
-                            RightMouseClick(X, Y);
+                            RightMouseClick(x, y);
                         }
                     }
-                    else if (Actions[i] is KeyBoardBotAction)
+                    else if (actions[i] is KeyBoardBotAction)
                     {
-                        KeyBoardBotAction keyBoardBotAction = (KeyBoardBotAction)Actions[i];
+                        KeyBoardBotAction keyBoardBotAction = (KeyBoardBotAction)actions[i];
 
                         InputSimulator inputSimulator = new InputSimulator();
 
-                        inputSimulator.Keyboard.TextEntry(keyBoardBotAction.Text);
+                        inputSimulator.Keyboard.TextEntry(keyBoardBotAction.text);
                     }
 
-                    Thread.Sleep(Actions[i].Delay); 
+                    Thread.Sleep(actions[i].delay); 
                 }
             }
             }

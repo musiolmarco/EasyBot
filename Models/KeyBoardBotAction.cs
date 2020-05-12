@@ -9,14 +9,14 @@ namespace EasyBot.Classes
     public class KeyBoardBotAction : BotAction
     {
 
-        public string Text { get; set; }
+        public string text { get; set; }
 
-        public KeyBoardBotAction(string Text, int Delay)
+        public KeyBoardBotAction(string text, int delay)
         {
-            this.Text = Text;
-            this.Delay = Delay;
-            this.Name = "Text: \"" + Text + "\"";
-            this.DisplayColor = "#1dd1a1";
+            this.text = text;
+            this.delay = delay;
+            this.name = "Text: \"" + text + "\"";
+            this.displayColor = "#1dd1a1";
         }
 
     }

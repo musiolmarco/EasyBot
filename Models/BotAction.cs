@@ -8,10 +8,10 @@ namespace EasyBot.Classes
 {
     public class BotAction
     {
-        public int Delay { get; set; }
+        public int delay { get; set; }
 
-        public string Name { get; set; }
+        public string name { get; set; }
 
-        public string DisplayColor { get; set; }
+        public string displayColor { get; set; }
     }
 }

@@ -14,7 +14,7 @@ namespace EasyBot.Views
     public partial class CreateMouseActionWindow : Window
     {
 
-        bool SetMouseLocation = false;
+        bool setMouseLocation = false;
         
 
         public CreateMouseActionWindow()
@@ -41,30 +41,30 @@ namespace EasyBot.Views
 
         private void Button_Create_Click(object sender, RoutedEventArgs e)
         {
-            int X = Convert.ToInt32(Label_X_Value.Content);
-            int Y = Convert.ToInt32(Label_Y_Value.Content);
-            int Delay;
-            bool Left_Click;
+            int x = Convert.ToInt32(Label_X_Value.Content);
+            int y = Convert.ToInt32(Label_Y_Value.Content);
+            int delay;
+            bool leftClick;
 
             try
             {
-                Delay = Convert.ToInt32(TextBox_Delay.Text);
+                delay = Convert.ToInt32(TextBox_Delay.Text);
             }
             catch
             {
-                Delay = 0;
+                delay = 0;
             }
 
             if ((bool)RadioButton_Leftclick.IsChecked)
             {
-                Left_Click = true;
+                leftClick = true;
             }
             else
             {
-                Left_Click = false;
+                leftClick = false;
             }
 
-            MouseBotAction mouseBotAction = new MouseBotAction(X, Y, Left_Click, Delay);
+            MouseBotAction mouseBotAction = new MouseBotAction(x, y, leftClick, delay);
 
             MainWindow.AddBotAction(mouseBotAction);
 
@@ -76,7 +76,7 @@ namespace EasyBot.Views
 
         private void Button_SetLocation_Click(object sender, RoutedEventArgs e)
         {
-            SetMouseLocation = true;
+            setMouseLocation = true;
             Label_SetLocationInfo.Visibility = Visibility.Visible;
 
             
@@ -84,17 +84,17 @@ namespace EasyBot.Views
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.Key == Key.F8 && SetMouseLocation)
+            if(e.Key == Key.F8 && setMouseLocation)
             {
 
-                System.Drawing.Point MousePositionPoint = wf.Control.MousePosition;
+                System.Drawing.Point mousePositionPoint = wf.Control.MousePosition;
 
-                Label_X_Value.Content = MousePositionPoint.X.ToString();
-                Label_Y_Value.Content = MousePositionPoint.Y.ToString();
+                Label_X_Value.Content = mousePositionPoint.X.ToString();
+                Label_Y_Value.Content = mousePositionPoint.Y.ToString();
 
                 Label_SetLocationInfo.Visibility = Visibility.Collapsed;
 
-                SetMouseLocation = false;
+                setMouseLocation = false;
             }
         }
 
@@ -102,10 +102,10 @@ namespace EasyBot.Views
         private void Button_TestLocation_Click(object sender, RoutedEventArgs e)
         {
 
-            int X = Convert.ToInt32(Label_X_Value.Content);
-            int Y = Convert.ToInt32(Label_Y_Value.Content);
+            int x = Convert.ToInt32(Label_X_Value.Content);
+            int y = Convert.ToInt32(Label_Y_Value.Content);
 
-            SetPosition(X, Y);
+            SetPosition(x, y);
 
         }
 

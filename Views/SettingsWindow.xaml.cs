@@ -14,9 +14,9 @@ namespace EasyBot.Views
         {
             InitializeComponent();
 
-            TextBox_Loops.Text = MainWindow.Loops.ToString();
+            TextBox_Loops.Text = MainWindow.loops.ToString();
 
-            TextBox_Delay.Text = MainWindow.Delay.ToString();
+            TextBox_Delay.Text = MainWindow.delay.ToString();
 
             Button_Close.Click += (s, e) => Close();
 
@@ -35,21 +35,21 @@ namespace EasyBot.Views
 
             try
             {
-                MainWindow.Loops = Convert.ToInt32(TextBox_Loops.Text);
+                MainWindow.loops = Convert.ToInt32(TextBox_Loops.Text);
             }
             catch
             {
-                MainWindow.Loops = 0;
+                MainWindow.loops = 0;
             }
 
 
             try { 
-            MainWindow.Delay = Convert.ToInt32(TextBox_Delay.Text);
+            MainWindow.delay = Convert.ToInt32(TextBox_Delay.Text);
 
             }
             catch
             {
-                MainWindow.Delay = 0;
+                MainWindow.delay = 0;
             }
 
             this.Close();
